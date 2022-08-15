@@ -2,10 +2,11 @@ from email.mime import image
 from operator import index
 from unicodedata import name
 from unittest import result
-from flask import Flask,render_template,request,redirect,url_for,g
+from flask import Flask,render_template,request,redirect,url_for,g,session
 import sys
 from db_connect import db
 from model import UserWine
+
 
 
 # from database import load_list
@@ -15,6 +16,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@127.0.0.1:3306/wine_project'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
+
 
 import database
 
@@ -87,8 +89,10 @@ def mywineclick():
         mywine=request.form['mywine']
         print("*******",mywine)
         # user=g.user_name
-        user="hailey"
-        userwine=UserWine(user,mywine)
+        # user="hailey"
+        userwine=UserWine()
+        userwine.id="hailey"
+        userwine.mywine=mywine
         db.session.add(userwine)
         db.session.commit()
         return redirect(url_for("mywine"))
@@ -99,15 +103,15 @@ def mywineclick():
 # 나의와인
 @app.route('/mywine')
 def mywine():
-    userwine_list=UserWine.query.all()
-    # result=[]
-    # for d in data:
-    #     tmp={
-    #         'id':d.id
-    #         'mywine':d.mywine
-    #     }
-    #     result.append(tmp)
-    return render_template("mywine.html")
+    # return render_template("mywine.html")
+    # userwine_list=UserWine.query.all()
+    data=db.session.query(UserWine).all()
+    result=[]
+    for d in data:
+        tmp={'id':d.id ,'mywine':d.mywine}
+        result.append(tmp)
+
+    return render_template("mywine.html",userwine_list=data)
 
 
 # @app.route('/search',methods=['GET','POST'])
