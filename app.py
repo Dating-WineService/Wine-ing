@@ -58,14 +58,17 @@ def wineinfo(index):
     imgurl=wine_info["imgurl"]
     # rec_id.tolist()
 
-
+    print(rec_id)
 
 
     # 추천 와인 정보
     winerecolist=[]
     recwines=rec_id.split(',')
+    print(recwines)
     for x in recwines:
+        print(x)
         x=int(x)
+        print(x)
         winereco=database.load_info(x)
         reco_img=winereco["imgurl"]
         reco_name=winereco["name"]
@@ -73,6 +76,7 @@ def wineinfo(index):
         reco_type=winereco["wine_type"]
         reco_id=x
         winerecolist.append([reco_name,reco_vintage,reco_type,reco_img,reco_id])
+    print("winerecolist",winerecolist)
 
     return render_template("wineinfo.html",wine_id=wine_id,name=name,vintage=vintage,wine_type=wine_type,grape_simple=grape_simple
     ,rating_num=rating_num,kprice=kprice,winery=winery,grapes=grapes,region=region,alcohol=alcohol,pairings=pairings,imgurl=imgurl,rec_id=rec_id
