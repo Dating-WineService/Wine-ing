@@ -21,85 +21,87 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="../static/css/winelist.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-      <!-- Custom styles for this template-->
-      <link href="../static/static_yujin/css/winelist.css" rel="stylesheet">
+    <!-- css 연결-->
+    <link href="../static/css/winelist.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winelist.css') }}">
+    
     <title>Wine List Price</title>
   </head>
 
 <body>
+    <!--top navar-->
+    <nav class="navbar navbar-expand-lg py-3  fixed-top">
 
-  <!-- top navbar -->
-  <nav class="navbar navbar-expand-lg py-3  sticky-top">
-
-    <div class="container-fluid">
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
-          
-          <li class="nav-item">
-            <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-              <img src="../static/static_seohyun/images/wineicon.png" height="20px">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="service.html" class="nav-link" style="margin-right: 20px; ">
-              서비스 소개
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
-              와인소식
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
-              와인용어사전
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
-              와인지도
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
-              와인검색
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="mywine.html" class="nav-link" style="margin-right: 20px;">
-              나의와인
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
-              와인 추천받기 
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
-              와인정보
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
-              Contact Us 
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="login.html" class="nav-link">
-             Login
-            </a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
+            
+            <li class="nav-item">
+              <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+                <img src="../static/static_seohyun/images/wineicon.png" height="20px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="service.html" class="nav-link" style="margin-right: 20px; ">
+                서비스 소개
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
+                와인소식
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
+                와인용어사전
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
+                와인지도
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
+                와인검색
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mywine.html" class="nav-link" style="margin-right: 20px;">
+                나의와인
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
+                와인 추천받기 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
+                와인정보
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
+                Contact Us 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+               Login
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
- 
+    </nav>
+
  
 
   <div class ="title">
