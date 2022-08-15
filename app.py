@@ -89,11 +89,8 @@ def mywineclick():
     if request.method=='POST':
         mywine=request.form['mywine']
         print("*******",mywine)
-        # user=g.user_name
-        # user="hailey"
-        userwine=UserWine()
-        userwine.id="hailey"
-        userwine.mywine=mywine
+
+        userwine=UserWine("me",mywine)
         db.session.add(userwine)
         db.session.commit()
         return redirect(url_for("mywine"))
@@ -106,13 +103,23 @@ def mywineclick():
 def mywine():
     # return render_template("mywine.html")
     # userwine_list=UserWine.query.all()
+
     data=db.session.query(UserWine).all()
     result=[]
     for d in data:
-        tmp={'id':d.id ,'mywine':d.mywine}
-        result.append(tmp)
+        if d.id=="me":
+            tmp={'id':d.id ,'mywine':d.mywine}
+            mywine=int(d.mywine)
+            wine_info=database.load_info(mywine)
+            tmp['wine_name']=wine_info["name"]
+            tmp['imgurl']=wine_info["imgurl"]
+            tmp['wine_vintage']=wine_info["vintage"]
+            tmp['wine_type']=wine_info["wine_type"]
+            result.append(tmp)
+            
+            
 
-    return render_template("mywine.html",userwine_list=data)
+    return render_template("mywine.html",userwine_list=result)
 
 
 # @app.route('/search',methods=['GET','POST'])
