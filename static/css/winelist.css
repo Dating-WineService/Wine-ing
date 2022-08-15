@@ -1,15 +1,14 @@
+
+
+
 body {
   padding:0;
   margin:0;
-  background-image: url("../static_yujin/images/배경색.png");
-  background-size:cover;
-  background-attachment: fixed;
-  background-position:center;
-  background-repeat: no-repeat;
+
 }
 
-.nav-link {
-  color: black;
+.container {
+  padding-left: 170px;
 }
 
 .title {
@@ -31,7 +30,8 @@ body {
   color: rgba(250, 250, 250, 0.91);
 }
 
-.stars {
+
+.stars{
   position: absolute;
   color: white; 
   width: 434px;
@@ -69,36 +69,104 @@ body {
   letter-spacing: 0.02em;
 }
 
-.default {
+.search {
+  position:absolute;
+  width:200px;
+  left:150px;
+  top: 250px;
+}
+
+.scroll {
+  height:150px;
+  overflow-y: scroll;
+}
+
+.vertical-scrollable>.row {
   position: absolute;
-  color: white;
-  position: absolute;
-  width: 420px;
-  height: 57px;
-  left: 136px;
-  top: 62px;
-  text-decoration: none;
+  top: 150px;
+  bottom: 100px;
+  left: 700px;
+  width: 50%;
+  overflow-y: scroll;
+}
+.col-sm-8 {
+  color: black;
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-top: 18px;
+}
+.col-sm-8:nth-child(2n+1) {
+  width: 700px;
+  height: auto;
+
+  background: rgba(255, 255, 255, 0.87);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.col-sm-8:nth-child(2n+2) {
+  background: none;
+  height:3%;
+}
+
+.top {
+width: 535px;
+font-family: 'Hind Vadodara';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 106.3%;
+/* or 46px */
+letter-spacing: -0.01em;
+color: #000000;
+height: 40px;
+}
+
+.winename {
+width: 585px;
+font-family: 'Hind Vadodara';
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+line-height: 106.3%;
+/* or 51px */
+letter-spacing: -0.01em;
+color: #000000;
+height:100px;
+}
+
+.region {
+  width: 460px;
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 106.3%;
+  /* or 46px */
+  letter-spacing: -0.01em;
+  color: #000000; 
+}
+
+.rating {
+  width: 900px;
   font-family: 'Hind Vadodara';
   font-style: normal;
   font-weight: 900;
-  font-size: 15px;
-  line-height: 146.3%;
-  /* or 29px */
-
-  letter-spacing: 0.02em;
+  font-size: 50px;
+  line-height: 106.3%;
+  /* or 46px */
+  letter-spacing: -0.01em;
+  color: #000000; 
 }
 
-.main {
-  top: 200px;
-  left: 200px;
+.tester {
+  border: radius 50%;
 }
 
-
-.container {
-  padding-left: 170px;
+.nav-link {
+  color: black;
 }
-
- .font--main {
-  top: 10px;
-  left:1px;
- }
+.bg-gradient-main {
+  background-color: #B83642 ;
+  background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
+  background-size: cover;
+}
