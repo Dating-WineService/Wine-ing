@@ -112,19 +112,36 @@
   </div>
 
   <!-- 와인목록 -->
-  <div>
-    <h2>
-      {% for wine in wine_list %}
-      <a href={{url_for("wineinfo",index=wine[1])}}>
-          {{wine[1]}} 
-          {{wine[2]}}
-          {{wine[3]}}
-          {{wine[4]}}
-      </a><br>
+  {% for wine in wine_list %} 
+  <a href={{url_for("wineinfo", index=wine[1])}}>
+    <section class ="main"> 
+      <div class ="container py-5">
+        <div class = "row justify-content-center mb-3">
+          <div class ="col-md-9 col-xl-9">
+            <div class = "card shadow-0 border rounded-4">
+              <div class = "card-body">
+                <div class ="row">
+                  <div class = " col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                    <div class = "bg-image hover-zoom ripple rounded ripple-surface">
+                      <div class = "hover-overlay">
+                        <div class ="mask" style = "background-color: rgba(253, 253, 253, 0.15);">
+                          {{wine[1]}}
+                          {{wine[2]}}
+                          {{wine[3]}}
+                          {{wine[4]}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </a>
 
-      {% endfor %}
-    </h2>
-  </div>
 
 </body>
 
