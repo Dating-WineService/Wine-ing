@@ -1,5 +1,8 @@
 import pandas as pd
 
+
+
+
 # def save(location, cleaness, built_in):
 #     idx = len(pd.read_csv("database.csv"))
 #     new_df = pd.DataFrame({"location":location,
