@@ -18,11 +18,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 
+
 import database
 
 @app.route('/')
 def main():
-    return render_template("main.html")
+    return render_template("mainpage.html")
 
 @app.route('/winelist')
 def winelist():
