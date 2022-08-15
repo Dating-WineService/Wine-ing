@@ -1,0 +1,198 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Web Fonts - Source Sans Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif; */
+
+/* Web Fonts - Noonnoo */
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff')format('woff');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+
+  
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #222;
+
+}
+button, input {
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+/* Default css */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin: 0;
+    background-color: #fff;
+    color: #222;
+
+}
+
+/* ##################### header ###################### */
+header {
+    margin-left: 30px;
+    background-color:rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 100;
+    
+}
+.header-inner {
+
+    width: 1300px;
+    /*margin: auto;*/
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+   
+    
+    
+}
+.logo {
+    float: left;
+    width: 5px;
+    height: 5px;
+}
+.gnb{
+    float: left;
+}
+.gnb a {
+   
+    margin: 20px;
+    font-size: 15px;
+}
+
+.map-title p{
+    position: absolute;
+  
+    height: 29px;
+    left: 18%;
+    top: 145px;
+    color: rgb(255, 255, 255); 
+    font-size: x-large;
+    font-weight: lighter;
+
+}
+
+.map-title h1{
+    position: absolute;
+    /* width: 600px;
+    height: 130px; */
+    left: 5%;
+    top: 130px;
+    
+    font-weight:900;
+    color: #ffffff;
+    /* color: rgb(255, 255, 255); */
+
+}
+.map-title{
+    position: absolute;
+    width:100%;
+    height: 30.9%;
+
+    /* background: #900303d0; */
+}
+.map-area{
+    /* Rectangle 13 */
+    position: absolute;
+    width:100%;
+    height:560px;
+    top: 250px;
+    /* left: 1921px;
+    top: 209px; */
+
+    /* border-radius: 50px 50px 0px 0px; */
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+/* #map{
+    position: absolute;
+    left: 3.5%;
+    top: 5.5%;
+} */
+
+/*  */
+.map_wrap{
+    /* Rectangle 13 */
+    position: absolute;
+    width:100%;
+    /* height:560px; */
+    top: 250px;
+    /* left: 1921px;
+    top: 209px; */
+
+
+    /* border-radius: 50px 50px 0px 0px; */
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+#map{
+    position: absolute;
+    left: 20%;
+    top: 5.5%;
+}
+.map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
+.map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
+.map_wrap {position:relative;width:100%;height: 616px;}
+#menu_wrap {position:absolute;top:15px;left:12px;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index:1;font-size:12px;border-radius: 10px;}
+.bg_white {background:#fff;}
+#menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+#menu_wrap .option{text-align: center;}
+#menu_wrap .option p {margin:10px 0;}  
+#menu_wrap .option button {margin-left:5px;}
+#placesList li {list-style: none;}
+#placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
+#placesList .item span {display: block;margin-top:4px;}
+#placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+#placesList .item .info{padding:10px 0 10px 55px;}
+#placesList .info .gray {color:#8a8a8a;}
+#placesList .info .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+#placesList .info .tel {color:#009900;}
+#placesList .item .markerbg {float:left;position:absolute;width:36px; height:37px;margin:10px 0 0 10px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;}
+#placesList .item .marker_1 {background-position: 0 -10px;}
+#placesList .item .marker_2 {background-position: 0 -56px;}
+#placesList .item .marker_3 {background-position: 0 -102px}
+#placesList .item .marker_4 {background-position: 0 -148px;}
+#placesList .item .marker_5 {background-position: 0 -194px;}
+#placesList .item .marker_6 {background-position: 0 -240px;}
+#placesList .item .marker_7 {background-position: 0 -286px;}
+#placesList .item .marker_8 {background-position: 0 -332px;}
+#placesList .item .marker_9 {background-position: 0 -378px;}
+#placesList .item .marker_10 {background-position: 0 -423px;}
+#placesList .item .marker_11 {background-position: 0 -470px;}
+#placesList .item .marker_12 {background-position: 0 -516px;}
+#placesList .item .marker_13 {background-position: 0 -562px;}
+#placesList .item .marker_14 {background-position: 0 -608px;}
+#placesList .item .marker_15 {background-position: 0 -654px;}
+#pagination {margin:10px auto;text-align: center;}
+#pagination a {display:inline-block;margin-right:10px;}
+#pagination .on {font-weight: bold; cursor: default;color:#777;}
+
+.bg-gradient-main {
+    background-color: #B83642 ;
+    background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
+    background-size: cover;
+  }
