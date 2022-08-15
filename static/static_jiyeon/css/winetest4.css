@@ -1,0 +1,384 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    overflow-x: hidden; 
+ }
+  
+  
+  
+  .tab-content {
+    overflow: hidden; }
+    .tab-content img {
+      width: 100%;
+      -webkit-animation-name: opacity;
+              animation-name: opacity;
+      -webkit-animation-duration: .3s;
+              animation-duration: .3s; }
+  
+  @media screen and (min-width: 997px) {
+    .wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  
+  .details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  
+  .colors {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  
+  .price, .alcohol,.year,.type,.region,.pairing{
+    
+    font-weight: bold; }
+  .product-title{
+    
+    font-weight: bold; 
+    color:#fff;
+  }
+  .subdetail{
+    height: 66px;
+    width: 533px;
+    left: 515px;
+    top: 155px;
+    color: #fff;
+    font-size: large;
+    font-weight: lighter;
+  }
+  .question{
+    position: fixed;
+    width: 656px;
+    height: 44px;
+    left: 120px;
+    top: 210px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;    
+    line-height: 100%;
+    /* or 36px */
+    letter-spacing: -0.01em;
+    color: #2c1633;
+  }
+
+  .select {
+    padding: 15px 10px;
+  }
+  .select input[type=radio]{
+    display: none;
+  }
+  .select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 16px;
+    gap: 16px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .select input[type=radio]+label{
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+    color: #333;
+  }
+  .select input[type=radio]:checked+label{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94);
+  }
+
+
+  .box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 375px;    
+    top: 290px;
+
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .box1:hover{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94); }
+
+  .q1{
+    position: fixed;
+    width: 129px;
+    height: 106.08px;
+    left: 410px;
+    top: 355px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .box2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 620px;    
+    top: 290px;
+
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .box2:hover{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94); }
+
+  .q2{
+    position: fixed;
+    width: 150px;
+    height: 106.08px;
+    left: 647px;
+    top: 355px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .box3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 865px;    
+    top: 290px;
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .box3:hover{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94); }
+
+  .q3{
+    position: fixed;
+    width: 250px;
+    height: 106.08px;
+    left: 842px;
+    top: 355px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  .box4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 375px;    
+    top: 530px;
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .box4:hover{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94); }
+
+  .q4{
+    position: fixed;
+    width: 150px;
+    height: 106.08px;
+    left: 397px;
+    top: 593px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .box5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 620px;    
+    top: 530px;
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .box5:hover{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94); }
+
+  .q5{
+    position: fixed;
+    width: 160px;
+    height: 106.08px;
+    left: 642px;
+    top: 593px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .box6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 865px;    
+    top: 530px;
+    background: rgba(255, 194, 194, 0.94);
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .box6:hover{
+    background: rgba(246, 147, 147, 0.94);
+    color: rgba(255, 194, 194, 0.94); }
+
+  .q6{
+    position: fixed;
+    width: 129px;
+    height: 106.08px;
+    left: 900px;
+    top: 593px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  .arrow-prev,
+  .arrow-next {
+    position: relative;
+  }
+
+  .arrow-prev::after {
+    position: fixed;
+    left: 100px; 
+    top: 430px;
+    content: '';
+    width: 70px; /* 사이즈 */
+    height: 70px; /* 사이즈 */
+    border-top: 10px solid #000; /* 선 두께 */
+    border-right: 10px solid #000; /* 선 두께 */
+    transform: rotate(225deg); /* 각도 */
+  }
+
+  .arrow-next::after {
+    position: fixed;
+    left: 1280px; 
+    top: 430px; 
+    content: '';
+    width: 70px; /* 사이즈 */
+    height: 70px; /* 사이즈 */
+    border-top: 10px solid #000; /* 선 두께 */
+    border-right: 10px solid #000; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+  }
+  
+  .orange {
+    background: #ff9f1a; }
+  
+  .green {
+    background: #85ad00; }
+  
+  .blue {
+    background: #0076ad; }
+  
+  
+  
+  @-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(3);
+              transform: scale(3); }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(3);
+              transform: scale(3); }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+  
+              .bg-gradient-main {
+                background-color: #B83642 ;
+                background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
+                background-size: cover;
+              }

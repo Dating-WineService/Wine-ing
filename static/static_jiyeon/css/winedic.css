@@ -1,0 +1,118 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+  overflow-x: hidden; 
+  color: rgba(255, 255, 255, 0.622);}
+
+
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3 ;
+            animation-duration: .3s; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.price, .alcohol,.year,.type,.region,.pairing{
+  
+  font-weight: bold; }
+.product-title{
+  
+  font-weight: bold; 
+  color:#fff;
+}
+.subdetail{
+  color: #fff;
+  font-size: large;
+  font-weight: lighter;
+}
+.alphabox{
+    position: relative;
+    float: left;
+    margin: 16px;
+    width: 55px;
+    height: 55px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+    background: rgba(255, 230, 194, 0.69);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}.alphabox:hover{
+    background: rgba(255, 213, 151, 0.69);
+    color: #fff; }
+
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.wineinfolink{
+  color: #000;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #0076ad; }
+
+
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+            .bg-gradient-main {
+              background-color: #B83642 ;
+              background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
+              background-size: cover;
+            }
+
