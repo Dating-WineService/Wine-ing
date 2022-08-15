@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--custom css--> 
- 
-    <link href="../static/static_jiyeon/css/winetest2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winetest2.css') }}">
+    <link href="../static/css/winetest2.css" rel="stylesheet">
   </head>
 
   <body class="bg-gradient-main">
@@ -91,7 +91,7 @@
     <br>
     <br>
 
-    <div class="wrapper row">
+    <div class="wrapper row" style="margin-bottom: 30.8%;">
       <div class="preview col-md-4" >
         <h1 class="product-title" style=" margin-bottom: 50px; padding-left: 100px; margin-top: -40px;">와인 취향 테스트</h1>
       </div>
