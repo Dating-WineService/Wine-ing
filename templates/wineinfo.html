@@ -22,8 +22,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-  
-    <link href="../static/static_seohyun/css/wineinfo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wineinfo.css') }}">
   </head>
 
   <body class="bg-gradient-main" >
@@ -132,7 +131,7 @@
               <h5 class="pairing">Pairing: <span>{{pairings}}</span></h5>
               <p></p>
 
-              
+
         <!-- 찜하기 버튼 - 폼 형식으로 변경하기 -->
         <div class="action">
           <form action="/mywineclick" method="POST" >
