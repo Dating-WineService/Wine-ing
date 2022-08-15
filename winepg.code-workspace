@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "winepg",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../Solux_wine-master/Solux_Dating/static/images"
+		}
+	],
+	"settings": {}
+}

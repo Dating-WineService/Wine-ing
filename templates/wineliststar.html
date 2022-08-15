@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="../static/css/winelist.css"> -->
+  <link rel="stylesheet" href="winelist.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <title>Wine</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg py-3  sticky-top">
+
+    <div class="container-fluid">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
+          
+          <li class="nav-item">
+            <a href="#top" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+              <img src="../static/images/wineicon.png" height="20px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#top" class="nav-link" style="margin-right: 20px; ">
+              서비스 소개
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#intro" class="nav-link" style="margin-right: 20px;">
+              와인소식
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link" style="margin-right: 20px;">
+              와인용어사전
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#slogan" class="nav-link" style="margin-right: 20px;">
+              와인지도
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
+              와인검색
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mywine.html" class="nav-link" style="margin-right: 20px;">
+              나의와인
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
+              와인 추천받기 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
+              와인정보
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#find-us" class="nav-link" style="margin-right: 20px;">
+              Contact Us 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+             Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <div class ="title">
+    와인검색 
+  </div>
+
+  <!-- 와인 목록 정렬 조건 or 검색탭 구현 -->
+  <div class = "stars"> 
+    <a href={{url_for("winelist")}} class="stars" role="button">기본</a>
+  </div>
+  <div class = "stars"> 
+    <a href={{url_for("wineliststar")}} class="stars" role="button">평점 높은 순</a>
+  </div>
+  <div class = "reviews"> 
+    <a href={{url_for("winelistprice")}} class="reviews" role="button">가격 순</a>
+  </div>
+
+  <!-- 와인목록 -->
+  <div>
+    <h2>
+      {% for wine in wine_list %}
+      <a href={{url_for("wineinfo",index=wine[1])}}>
+          {{wine[1]}} 
+          {{wine[2]}}
+          {{wine[3]}}
+          {{wine[4]}}
+      </a><br>
+
+      {% endfor %}
+    </h2>
+  </div>
+
+</body>
+
+</html>
+

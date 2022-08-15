@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../static/css/mywine.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>My Wine</title>
+</head>
+
+<body>
+    <!--top navar-->
+    <nav class="navbar navbar-expand-lg py-3  stick">
+
+      <div class="container-fluid">
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
+            <li class="nav-item">
+              <a href="#top" class="nav-link" style="margin-right: 40px; margin-left: 30px; ">
+                홈
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#top" class="nav-link" style="margin-right: 40px; ">
+                서비스 소개
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#intro" class="nav-link" style="margin-right: 40px;">
+                와인소식
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link" style="margin-right: 40px;">
+                와인용어사전
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#slogan" class="nav-link" style="margin-right: 40px;">
+                와인지도
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winelist.html" class="nav-link" style="margin-right: 40px;">
+                와인검색
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="mywine.html" class="nav-link" style="margin-right: 40px;">
+                나의와인
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="winetest1.html" class="nav-link" style="margin-right: 40px;">
+                와인 추천받기 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
+                와인정보
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#find-us" class="nav-link" style="margin-right: 40px;">
+                Contact Us 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+               Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+  
+  <div class ="title">
+    나의 와인
+  </div>
+  <div class ="desc1">
+    나의 와인을 기록하고 찜 할 수 있습니다. 
+  </div>
+  <div class ="desc2">
+    찜 한 와인을 기반으로 새로운 와인을 추천해 드려요!
+  </div>
+
+<div class = "winepic1"> 
+  <img class="image image--circle image--center" src="../static/images/winebottle.jpg">
+</div>
+<div class = "winepic2"> 
+  <img class="image image--circle image--center" src="../static/images/winebottle.jpg">
+</div>
+<div class = "winepic3"> 
+  <img class="image image--circle image--center" src="../static/images/winebottle.jpg">
+</div>
+<div class = "winepic4"> 
+  <img class="image image--circle image--center" src="../static/images/winebottle.jpg">
+</div>
+<div class = "winepic5"> 
+  <img class="image image--circle image--center" src="../static/images/winebottle.jpg">
+</div>
+<div class = "winepic6"> 
+  <img class="image image--circle image--center" src="../static/images/winebottle.jpg">
+</div>
+<ul>
+  {% for member in userwine_list %}
+       <li><p>{{ member.id }} {{ member.mywine }}</p></li>
+  {% endfor %}
+</ul>
+<div class ="name1 name--font">
+  Nero d'Avola 2020
+</div>
+<div class ="name2 name--font">
+  Nero d'Avola 2020
+</div>
+<div class ="name3 name--font">
+  Nero d'Avola 2020
+</div>
+<div class ="name4 name--font">
+  Nero d'Avola 2020
+</div>
+<div class ="name5 name--font">
+  Nero d'Avola 2020
+</div>
+<div class ="name6 name--font">
+  Nero d'Avola 2020
+</div>
+
+<div class="year1 small--font">
+  2020
+</div>
+<div class="year2 small--font">
+  2020
+</div>
+<div class="year3 small--font">
+  2020
+</div>
+<div class="year4 small--font">
+  2020
+</div>
+<div class="year5 small--font">
+  2020
+</div>
+<div class="year6 small--font">
+  2020
+</div>
+
+<div class="winetype1 small--font">
+  Red Wine
+</div>
+<div class="winetype2 small--font">
+  Red Wine
+</div>
+<div class="winetype3 small--font">
+  Red Wine
+</div>
+<div class="winetype4 small--font">
+  Red Wine
+</div>
+<div class="winetype5 small--font">
+  Red Wine
+</div>
+<div class="winetype6 small--font">
+  Red Wine
+</div>
+
+<div class ="link1">
+  <a href="#link1" class="link"> 상세 페이지 </a>
+</div>
+
+<div class ="link2">
+  <a href=#link2 class="link"> 상세 페이지</a> 
+</div>
+
+<div class ="link3">
+  <a href =#link3 class="link"> 상세 페이지</a>
+</div>
+
+<div class ="link4">
+  <a href=#link4 class="link"> 상세 페이지</a>
+</div>
+
+<div class ="link5">
+  <a href=#link5 class="link"> 상세 페이지</a>
+</div>
+
+<div class ="link6">
+  <a href=#link6 class="link"> 상세 페이지 </t>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../static/js/app.js"></script>
+</body>
+</html>
