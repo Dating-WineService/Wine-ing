@@ -12,10 +12,6 @@ from model import UserWine
 # from database import load_list
 application = Blueprint('application', __name__)
 
-# DB config
-application.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@127.0.0.1:3306/wine_project'
-application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db.init_app(application)
 
 
 
@@ -90,10 +86,10 @@ def mywineclick():
         mywine=request.form['mywine']
         print("*******",mywine)
 
-        userwine=UserWine("me",mywine)
+        userwine=UserWine("me2",mywine)
         db.session.add(userwine)
         db.session.commit()
-        return redirect(url_for("mywine"))
+        return redirect(url_for("application.mywine"))
         # return redirect(url_for("wineinfo(index)"))
     else:
         return render_template("mywine.html")
@@ -107,7 +103,7 @@ def mywine():
     data=db.session.query(UserWine).all()
     result=[]
     for d in data:
-        if d.id=="me":
+        if d.id=="me2":
             tmp={'id':d.id ,'mywine':d.mywine}
             mywine=int(d.mywine)
             wine_info=database.load_info(mywine)
