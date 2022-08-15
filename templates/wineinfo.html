@@ -23,7 +23,9 @@
 
     <!-- Custom styles for this template-->
   
-    <link href="../static/static_seohyun/css/wineinfo.css" rel="stylesheet">
+    <!-- <link href="../static/static_seohyun/css/wineinfo.css" rel="stylesheet"> -->
+    <!--CSS 파일 링크-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wineinfo.css') }}">
   </head>
 
   <body class="bg-gradient-main" >
@@ -249,7 +251,7 @@
               <h4 class="year">{{winerecolist[5][1]}}</h4>
               <h4 class="type">{{winerecolist[5][2]}}</h4>
               <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-              <a href={{url_for("wineinfo",index=winerecolist[5][4])} style="color:black"}>🔗 와인 상세페이지</a>
+              <a href={{url_for("wineinfo",index=winerecolist[5][4])}} style="color:black"}>🔗 와인 상세페이지</a>
          
 
             </div>
