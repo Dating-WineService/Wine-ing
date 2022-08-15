@@ -93,16 +93,24 @@
                 와인정보
               </a>
             </li>
-            <li class="nav-item">
-              <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
-                Contact Us 
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-               Login
-              </a>
-            </li>
+            {% if user_name %}
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 20px;">
+                  {{ user_name }}님
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                  Logout
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="/login" class="nav-link">
+                  Login
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
