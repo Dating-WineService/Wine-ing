@@ -1,0 +1,312 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    overflow-x: hidden; 
+}
+  
+  
+  
+  .tab-content {
+    overflow: hidden; }
+    .tab-content img {
+      width: 100%;
+      -webkit-animation-name: opacity;
+              animation-name: opacity;
+      -webkit-animation-duration: .3s;
+              animation-duration: .3s; }
+  
+  @media screen and (min-width: 997px) {
+    .wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  
+  .details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  
+  .colors {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  
+  .price, .alcohol,.year,.type,.region,.pairing{
+    
+    font-weight: bold; }
+
+  .product-title{
+    
+    font-weight: bold; 
+    color:#fff;
+  }
+  .subdetail{
+    height: 66px;
+    width: 533px;
+    left: 515px;
+    top: 155px;
+    color: #fff;
+    font-size: large;
+    font-weight: lighter;
+  }
+  .question{
+    position: fixed;
+    width: 656px;
+    height: 44px;
+    left: 120px;
+    top: 180px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;    
+    line-height: 100%;
+    /* or 36px */
+    letter-spacing: -0.01em;
+    color: #2c1633;
+  }
+
+  .form_radio_btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    font-size: 30px;
+  }
+  .form_radio_btn input[type=radio] {
+    display: none;
+  }
+  .form_radio_btn label {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    height: -webkit-fill-available;
+    line-height: 45px;
+  }
+
+  /* Checked */
+  .form_radio_btn input[type=radio]:checked + label {
+    background: rgba(246, 147, 147, 0.94);
+    color: #fff;
+  }
+   
+  /* Hover */
+  .form_radio_btn label:hover {
+    color: #666;
+  }
+   
+  /* Disabled */
+  .form_radio_btn input[type=radio] + label {
+    background: #F9FAFC;
+    color: #666;
+  }
+  
+  .box1{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    position: fixed;
+    width: 700px;
+    height: 500px;
+    left: 375px;
+    top: 250px;
+    background: #ffd9d9;
+    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+    border-radius: 16px;
+  }
+  .idx1{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 440px;
+    top: 350px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .idx2{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 440px;
+    top: 425px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .idx3{
+    position: fixed;
+    width: 100px;
+    height: 52px;
+    left: 430px;
+    top: 500px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .idx4{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 440px;
+    top: 575px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .idx5{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 440px;
+    top: 650px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .idx6{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 570px;
+    top: 280px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(51, 27, 59, 0.66);
+  }
+  .idx7{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 725px;
+    top: 280px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(51, 27, 59, 0.66);
+  }
+  .idx8{
+    position: fixed;
+    width: 67px;
+    height: 52px;
+    left: 912px;
+    top: 280px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 145.3%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(51, 27, 59, 0.66);
+  }
+
+  .arrow-prev,
+  .arrow-next {
+    position: relative;
+  }
+
+  .arrow-prev::after {
+    position: fixed;
+    left: 100px; 
+    top: 430px;
+    content: '';
+    width: 70px; /* 사이즈 */
+    height: 70px; /* 사이즈 */
+    border-top: 10px solid #000; /* 선 두께 */
+    border-right: 10px solid #000; /* 선 두께 */
+    transform: rotate(225deg); /* 각도 */
+  }
+
+  .arrow-next::after {
+    position: fixed;
+    left: 1280px; 
+    top: 430px; 
+    content: '';
+    width: 70px; /* 사이즈 */
+    height: 70px; /* 사이즈 */
+    border-top: 10px solid #000; /* 선 두께 */
+    border-right: 10px solid #000; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+  }
+  
+  .orange {
+    background: #ff9f1a; }
+  
+  .green {
+    background: #85ad00; }
+  
+  .blue {
+    background: #0076ad; }
+  
+  
+  
+  @-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(3);
+              transform: scale(3); }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(3);
+              transform: scale(3); }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+  
+              .bg-gradient-main {
+                background-color: #B83642 ;
+                background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
+                background-size: cover;
+              }
