@@ -1,35 +1,37 @@
 body {
   padding:0;
   margin:0;
-
+  background-image: url("../static_yujin/images/배경색.png");
+  background-size:cover;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
 }
 
 .title {
-    position: relative;
-    width: 250px;
-    height: 107px;
-    left: 150px;
-    margin-top: 3%;
-    margin-left: 0;
-    
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 106.3%;
-    /* or 64px */
-    
-    letter-spacing: -0.01em;
-    
-    color: rgba(250, 250, 250, 0.91);
-  }
+  position: relative;
+  width: 260px;
+  height: 107px;
+  margin-left: 9%;
+  margin-top: 8%;
+  
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 106.3%;
+  /* or 64px */
+  
+  letter-spacing: -0.01em;
+  color: rgba(250, 250, 250, 0.91);
+}
 
   .desc1 {
   position: relative;
   width: 630px;
   height: 76px;
-  margin-left: 27%;
-  margin-top: -7%;
+  margin-left: 24%;
+  margin-top: -6.8%;
 
   font-family: 'Hind Vadodara';
   font-style: normal;
@@ -47,7 +49,7 @@ body {
     position: relative;
     width: 630px;
     height: 76px;
-   margin-left: 27%;
+   margin-left: 24%;
     margin-top: -3%;
   
     font-family: 'Hind Vadodara';
@@ -315,6 +317,7 @@ text-decoration: none;
 .nav-link {
   color: black; 
 }
+
 .bg-gradient-main {
   background-color: #B83642 ;
   background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
