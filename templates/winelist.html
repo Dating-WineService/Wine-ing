@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winelist.css') }}">
     <link href="../static/css/winelist.css" rel="stylesheet">
+    <link href="../winelistfinal/winelistfinal.css" rel="stylesheet">
   </head>
 <body>
 
@@ -146,11 +147,11 @@
                         <div class ="mask" style = "background-color: rgba(253, 253, 253, 0.15);">
                           <!-- 이미지 추가 -->
                           <div clas = "winepic">
-                            <img class="image" src={{wine[8]}}>
+                            <img class="image image--center" src={{wine[8]}}>
                           </div>
 
-                          <cdiv class = "wineidname">
-                            {{wine[1]}} {{wine[2]}}
+                          <cdiv class = "winename">
+                            {{wine[2]}}
                           </cdiv>
 
                           <div class = "year">
@@ -175,6 +176,7 @@
   </a> 
   {% endfor %} 
 
+ 
 </body>
 
 </html>
