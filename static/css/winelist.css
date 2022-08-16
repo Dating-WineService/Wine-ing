@@ -104,7 +104,8 @@ body {
 }
    
 .image {
-  width: 130px;
+  padding-left:20px;
+  width: 70px;
   height: 130px;
 }
 
@@ -118,7 +119,7 @@ body {
   height: 35px;
   left: 170px;
   top: 30px;
-  width: 250px;
+  width: 400px;
   text-decoration: none;
   color: black;
   font-size: 20px;
