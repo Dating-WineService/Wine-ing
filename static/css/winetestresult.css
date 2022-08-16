@@ -38,8 +38,8 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1; }
   
-  .price, .alcohol,.year,.type,.region,.pairing{
-    
+  .type{
+    text-align: center;
     font-weight: bold; }
 
   .title{
@@ -64,31 +64,25 @@ body {
     text-align: center;
   }
   .box1{
-    position: fixed;
+    position: relative;
     width: 230px;
     height: 230px;
-    left: 250px;
-    top: 350px;
     background: #FFFFFF;
     border-radius: 16px;
   }
 
   .box2{
-    position: fixed;
+    position: relative;
     width: 230px;
     height: 230px;
-    left: 600px;
-    top: 350px;
     background: #FFFFFF;
     border-radius: 16px;
   }
 
   .box3{
-    position: fixed;
+    position: relative;
     width: 230px;
     height: 230px;
-    left: 950px;
-    top: 350px;
     background: #FFFFFF;
     border-radius: 16px;
   }
