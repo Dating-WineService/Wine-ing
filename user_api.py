@@ -9,7 +9,7 @@ from google_auth_oauthlib.flow import Flow
 from pip._vendor import cachecontrol
 import google.auth.transport.requests
 
-from models import User
+from model import User
 from db_connect import db
 
 user = Blueprint('user', __name__)
