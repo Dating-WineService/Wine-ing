@@ -149,6 +149,6 @@ body {
   padding: 0; margin: 0;
   background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
 }
+
 .wrapper .content {
-  padding: 26px; /* Put any padding or styles here you want, it won't break gradient */
-}
+  padding: 26px; /* Put any padding or styles here you want, it won't break gradient */}
