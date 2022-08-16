@@ -145,11 +145,22 @@
                       <div class = "hover-overlay">
                         <div class ="mask" style = "background-color: rgba(253, 253, 253, 0.15);">
                           <!-- 이미지 추가 -->
-                          <img class="" src={{wine[8]}}>
-                          {{wine[1]}}
-                          {{wine[2]}}
-                          {{wine[3]}}
-                          {{wine[4]}}
+                          <div clas = "winepic">
+                            <img class="image" src={{wine[8]}}>
+                          </div>
+
+                          <cdiv class = "wineidname">
+                            {{wine[1]}} {{wine[2]}}
+                          </cdiv>
+
+                          <div class = "year">
+                            {{wine[3]}}
+                          </div>
+
+                          <div class ="winetype">
+                            {{wine[4]}}
+                          </div>
+
                         </div>
                       </div>
                     </div>
