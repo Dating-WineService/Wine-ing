@@ -79,11 +79,24 @@
                 Contact Us 
               </a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-               Login
-              </a>
-            </li>
+            {% if user_name %}
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 20px;">
+                  {{ user_name }}님
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                  Logout
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="/login" class="nav-link">
+                  Login
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -107,7 +120,7 @@
                       <h3 class=" text-gray-900 mb-4">다양한 와인서비스를 즐겨보세요!</h3>
                     </div>
                     <hr>
-                    <a href="mainpage.html" class="btn btn-google btn-user btn-block">
+                    <a href="/google_login" class="btn btn-google btn-user btn-block">
                       <!-- <i class="fab fa-google fa-fw"></i> -->
                       <p class="fs-3" style="margin-top: 5%;"><img src="../static/static_seohyun/images/free-icon-search-281764.png" height="50px" width="50" style="margin-right: 2%;">   Login with Google</p>
                   </a>

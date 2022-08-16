@@ -7,11 +7,16 @@ import sys
 from db_connect import db
 from model import UserWine
 from data_api import application
+from user_api import user
+from survey_api import survey
 
 
 
 # from database import load_list
 app = Flask(__name__)
+app.secret_key = "secret"
+app.register_blueprint(user)
+app.register_blueprint(survey)
 app.register_blueprint(application)
 
 
@@ -26,5 +31,10 @@ import database
 
 @app.route('/')
 def main():
-    return render_template("mainpage.html")
+    if g.user_name:
+        return render_template("mainpage.html")
+    else:
+        return render_template('login.html')
 
+if __name__ == "__main__":
+    app.run(debug=True)
