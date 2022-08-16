@@ -20,10 +20,15 @@ body {
 }
 
 .wrapper {
-  display: flex;
-  height: 100vh;
+  /* display: flex; */
+  /* height: 100vh; */
+  position: fixed;
   justify-content: center;
   align-items: center;
+ margin-top: 20%;
+  margin-bottom: 16%;
+  width:100%
+ 
 }
 
 .team {
@@ -125,7 +130,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 
+.contx{
+  text-align: center;
+  /* display: flex; */
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  margin-top:10%;
+  color: #fff;
+  position: fixed;
+  left:38.5%
+ 
 
+}
 
 
 
