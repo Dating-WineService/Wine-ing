@@ -89,24 +89,11 @@
                 Contact Us 
               </a>
             </li>
-            {% if user_name %}
-              <li class="nav-item">
-                <a class="nav-link" style="margin-right: 20px;">
-                  {{ user_name }}님
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/logout" class="nav-link">
-                  Logout
-                </a>
-              </li>
-            {% else %}
-              <li class="nav-item">
-                <a href="/login" class="nav-link">
-                  Login
-                </a>
-              </li>
-            {% endif %}
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+               Login
+              </a>
+            </li>
           </ul>
         </div>
       </div>

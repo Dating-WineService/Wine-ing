@@ -11,15 +11,3 @@ class UserWine(db.Model):
     def __init__(self, id, mywine):
         self.id = id
         self.mywine = mywine
-
-
-class User(db.Model):
-    __tablename__ = "User"
-    # id = db.Column(db.Float, primary_key=True, unique=True)
-    id = db.Column(db.String(100), primary_key=True, unique=True, nullable=False)
-    name = db.Column(db.String(100), nullable=True)
-    # created_at = db.Column(db.DateTime, default=datetime.datetime.utcnow())
-
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
