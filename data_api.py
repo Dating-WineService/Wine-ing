@@ -17,9 +17,10 @@ application = Blueprint('application', __name__)
 
 import database
 
-@application.route('/')
-def main():
-    return render_template("mainpage.html")
+# app.py에 있는 route('/')와 중복되어서 주석처리했어요!
+# @application.route('/')
+# def main():
+#     return render_template("mainpage.html")
 
 @application.route('/winelist')
 def winelist():
