@@ -67,12 +67,12 @@ body {
 
 .dic_box{
   position: relative;
-  float: left;
   margin: 20px 20%;
   width: 88%;
   height: 120px;
   border: 1px solid #000;
   border-radius: 10px;
+  
   text-align: center;
   background: rgba(255, 230, 194, 0.69);
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
