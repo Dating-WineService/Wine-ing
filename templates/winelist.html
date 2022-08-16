@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winelist.css') }}">
     <link href="../static/css/winelist.css" rel="stylesheet">
+    <link href="../winelistfinal/winelistfinal.css" rel="stylesheet">
   </head>
 <body>
 
@@ -145,11 +146,22 @@
                       <div class = "hover-overlay">
                         <div class ="mask" style = "background-color: rgba(253, 253, 253, 0.15);">
                           <!-- 이미지 추가 -->
-                          <img class="" src={{wine[8]}}>
-                          {{wine[1]}}
-                          {{wine[2]}}
-                          {{wine[3]}}
-                          {{wine[4]}}
+                          <div clas = "winepic">
+                            <img class="image image--center" src={{wine[8]}}>
+                          </div>
+
+                          <cdiv class = "winename">
+                            {{wine[2]}}
+                          </cdiv>
+
+                          <div class = "year">
+                            {{wine[3]}}
+                          </div>
+
+                          <div class ="winetype">
+                            {{wine[4]}}
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -164,6 +176,7 @@
   </a> 
   {% endfor %} 
 
+ 
 </body>
 
 </html>
