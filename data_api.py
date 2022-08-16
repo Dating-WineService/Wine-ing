@@ -87,7 +87,7 @@ def mywineclick():
         mywine=request.form['mywine']
         print("*******",mywine)
 
-        userwine=UserWine("me2",mywine)
+        userwine=UserWine(g.user_name,mywine)
         db.session.add(userwine)
         db.session.commit()
         return redirect(url_for("application.mywine"))
@@ -98,23 +98,19 @@ def mywineclick():
 # 나의와인
 @application.route('/mywine')
 def mywine():
-    # return render_template("mywine.html")
-    # userwine_list=UserWine.query.all()
-
-    data=db.session.query(UserWine).all()
     result=[]
+
+    data = db.session.query(UserWine).filter(UserWine.id.like(g.user_name)).all()
+
     for d in data:
-        if d.id=="me2":
-            tmp={'id':d.id ,'mywine':d.mywine}
-            mywine=int(d.mywine)
-            wine_info=database.load_info(mywine)
-            tmp['wine_name']=wine_info["name"]
-            tmp['imgurl']=wine_info["imgurl"]
-            tmp['wine_vintage']=wine_info["vintage"]
-            tmp['wine_type']=wine_info["wine_type"]
-            result.append(tmp)
-            
-            
+        tmp={'id':d.id ,'mywine':d.mywine}
+        mywine=int(d.mywine)
+        wine_info=database.load_info(mywine)
+        tmp['wine_name']=wine_info["name"]
+        tmp['imgurl']=wine_info["imgurl"]
+        tmp['wine_vintage']=wine_info["vintage"]
+        tmp['wine_type']=wine_info["wine_type"]
+        result.append(tmp)
 
     return render_template("mywine.html",userwine_list=result)
 
