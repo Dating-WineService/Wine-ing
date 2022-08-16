@@ -38,25 +38,17 @@ def load_logged_in_user():
         g.user_obj = None
         g.user_name = None
         print(g.user_name)
-        return render_template('login.html')
     else:
         g.user_obj = db.session.query(User).filter(User.id == user_id).first()
         g.user_name = g.user_obj.name
         print(g.user_name)
 
 
-# @user.route("/login")
-# def login():
-#     return render_template('login.html')
-
-
-@user.route("/index")
-def index():
+@user.route("/login")
+def login():
     if g.user_name:
-        return render_template('index.html', user_name=g.user_name)
-    else:
-    # print(g.user_obj)
-        return render_template('login.html')
+        return redirect('/')
+    return render_template('login.html')
 
 
 @user.route("/google_login")
@@ -103,7 +95,7 @@ def callback():
         db.session.commit()
         print('save in DB')
         # return jsonify({'result':'save'})
-    return redirect('/index')
+    return redirect('/')
 
 @user.route("/logout")
 def logout():
