@@ -50,7 +50,7 @@ body {
   font-weight: lighter;
 }
 .alphabox{
-    position: relative;
+  
     float: left;
     margin: 16px;
     width: 55px;
@@ -63,6 +63,92 @@ body {
 }.alphabox:hover{
     background: rgba(255, 213, 151, 0.69);
     color: #fff; }
+
+
+.action1{
+  position: fixed;
+  left: 5%;
+  top: 30%;
+ 
+}
+.action2{
+  position: fixed;
+  left: 11%;
+  top: 30%;
+ 
+}
+.action3{
+  position: fixed;
+  left: 17%;
+  top: 30%;
+ 
+}
+.action4{
+  position: fixed;
+  left: 23%;
+  top: 30%;
+ 
+}
+.action5{
+  position: fixed;
+  left: 29%;
+  top: 30%;
+ 
+}
+.action6{
+  position: fixed;
+  left: 35%;
+  top: 30%;
+ 
+}
+.action7{
+  position: fixed;
+  left: 41%;
+  top: 30%;
+ 
+}
+.action8{
+  position: fixed;
+  left: 47%;
+  top: 30%;
+ 
+}
+.action9{
+  position: fixed;
+  left: 53%;
+  top: 30%;
+ 
+}
+.action10{
+  position: fixed;
+  left: 59%;
+  top: 30%;
+ 
+}
+.action11{
+  position: fixed;
+  left: 65%;
+  top: 30%;
+ 
+}
+.action12{
+  position: fixed;
+  left: 71%;
+  top: 30%;
+ 
+}
+.action13{
+  position: fixed;
+  left: 77%;
+  top: 30%;
+ 
+}
+.action14{
+  position: fixed;
+  left: 83%;
+  top: 30%;
+ 
+}
 
 
 .product-title, .rating, .product-description, .price, .vote, .sizes {
