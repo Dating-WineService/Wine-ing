@@ -24,11 +24,14 @@ import database
 
 @application.route('/winelist')
 def winelist():
-    if g.user_name:
-        wine_list=database.load_list()
-        return render_template("winelist.html",wine_list=wine_list, user_name=g.user_name)
-    else:
-        return render_template('login.html')
+    wine_list=database.load_list()
+    return render_template("winelist.html",wine_list=wine_list)
+
+    # if g.user_name:
+    #     wine_list=database.load_list()
+    #     return render_template("winelist.html",wine_list=wine_list, user_name=g.user_name)
+    # else:
+    #     return render_template('login.html')
     
 
 @application.route('/wineliststar')
@@ -88,8 +91,9 @@ def wineinfo(index):
 
     return render_template("wineinfo.html",wine_id=wine_id,name=name,vintage=vintage,wine_type=wine_type,grape_simple=grape_simple
     ,rating_num=rating_num,kprice=kprice,winery=winery,grapes=grapes,region=region,alcohol=alcohol,pairings=pairings,imgurl=imgurl,rec_id=rec_id
-    ,winerecolist=winerecolist, user_name=g.user_name
+    ,winerecolist=winerecolist
     )
+    #, user_name=g.user_name
 
 
 # 찜하기를 눌렀을때
