@@ -3,8 +3,6 @@ body {
   overflow-x: hidden; 
   color: rgba(255, 255, 255, 0.622);}
 
-
-
 .tab-content {
   overflow: hidden; }
   .tab-content img {
@@ -78,17 +76,6 @@ body {
   font-weight: bolder;
   font-size: large;
 }
-
-.orange {
-  background: #ff9f1a; }
-
-.green {
-  background: #85ad00; }
-
-.blue {
-  background: #0076ad; }
-
-
 
 @-webkit-keyframes opacity {
   0% {

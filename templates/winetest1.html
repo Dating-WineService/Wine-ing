@@ -31,32 +31,32 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
             <li class="nav-item">
-              <a href="index.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+              <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
                 <img src="../static/static_jiyeon/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
-              <a href="#top" class="nav-link" style="margin-right: 20px; ">
+              <a href="service.html" class="nav-link" style="margin-right: 20px; ">
                 서비스 소개
               </a>
             </li>
             <li class="nav-item">
-              <a href="#intro" class="nav-link" style="margin-right: 20px;">
+              <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
                 와인소식
               </a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link" style="margin-right: 20px;">
+              <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
                 와인용어사전
               </a>
             </li>
             <li class="nav-item">
-              <a href="#slogan" class="nav-link" style="margin-right: 20px;">
+              <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
                 와인지도
               </a>
             </li>
             <li class="nav-item">
-              <a href="#gallery" class="nav-link" style="margin-right: 20px;">
+              <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
                 와인검색
               </a>
             </li>
@@ -66,25 +66,43 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="/winetest1" class="nav-link" style="margin-right: 20px;">
+              <a href="winetest1.html" class="nav-link" style="margin-right: 20px;">
                 와인 추천받기 
               </a>
             </li>
             <li class="nav-item">
-              <a href="#wineinfo" class="nav-link" style="margin-right: 20px;">
+              <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
                 와인정보
               </a>
             </li>
             <li class="nav-item">
-              <a href="#find-us" class="nav-link" style="margin-right: 20px;">
+              <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
                 Contact Us 
               </a>
             </li>
             <li class="nav-item">
-              <a href="/login" class="nav-link">
+              <a href="login.html" class="nav-link">
                Login
               </a>
             </li>
+            {% if user_name %}
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 20px;">
+                  {{ user_name }}님
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                  Logout
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="/login" class="nav-link">
+                  Login
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
