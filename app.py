@@ -34,14 +34,11 @@ import database
 
 @app.route('/')
 def main():
-    
-    return render_template('mainpage.html', user_name=g.user_name)
-    
-    ## 로그인 기능 안되시는 분들도 접속하도록 제한 풀어놓음
-    # if g.user_name:
-    #     return render_template('mainpage.html', user_name=g.user_name)
-    # else:
-    #     return render_template('login.html')
+    # 로그인 기능 안되시는 분들도 접속하도록 제한 풀어놓음
+    if g.user_name:
+        return render_template('mainpage.html', user_name=g.user_name)
+    else:
+        return render_template('mainpage.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
