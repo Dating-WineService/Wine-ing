@@ -112,48 +112,46 @@
             <h1 class="subdetail" style=" margin: auto; padding-top: 1.2%; text-align: center;"> 와인 취향 테스트 바탕 추천 와인입니다.
               <br>저희가 직접 분석한 결과입니다.<br>당신 취향의 와인을 찾아보세요!</h1>
         </div>
-        <div class="wrapper row">
-
-            <div class="box1 col-md-3" style="text-align: center;">
-                <div class="preview col-md-2 " style="margin: auto; margin-left: 35%; padding-top: 2%;" >
-                    <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="65px" id=setimg/>
+        <div class="wrapper row" style="margin-bottom: 30%">
+          <table align="center">
+            <tr align="center">
+              <td>
+                <div class="box1 col-md-3" style="text-align: center;">
+                      <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="65px" id=setimg/>
                 </div>
-            </div>
-            <div class="details col-md-4" style="margin-left: 135px; padding-top: 340px; " >
-              <h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}} {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3>
-              <h4 class="type" style="margin-left: 180px; margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4>
-              <div class="preview col-md-6" style="margin-left: 140px; margin-top: -5px;">
-              <a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a>
-              </div>
-            </div>
-
-
-            
-            <div class="box2 col-md-3" style="text-align: center;">
-                <div class="preview col-md-2 " style="margin: auto; margin-left: 37%; padding-top: 2%;" >
-                    <img src="{{sur_wine_dic[sur_wine_idx[1]]['imgurl']}}" width="65px" />
+              </td>
+              <td>
+                <div class="box2 col-md-3" style="text-align: center;">
+                  <div class="preview col-md-2 " style="margin: auto; margin-left: 37%; padding-top: 2%;" >
+                      <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="65px" id=setimg/>
+                  </div>
                 </div>
-            </div>
-            <div class="details col-md-4" style="margin-left: -135px; padding-top: 340px;" >
-              <h3 class="product-title">{{sur_wine_dic[sur_wine_idx[1]]['name']}} {{sur_wine_dic[sur_wine_idx[1]]['vintage']}}</h3>
-              <h4 class="type" style="margin-left: 180px; padding-top: 5px; margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[1]]['wine_type']}}</h4>
-              <div class="preview col-md-6" style="margin-left: 140px; margin-top: -5px;">
-              <a class="wineinfolink" href="#wineinfo.html"  >🔗 와인 상세페이지</a>
-              </div>
-            </div>
-
-            <div class="box3 col-md-3" style="text-align: center;">
-                <div class="preview col-md-2 " style="margin: auto; margin-left: 37%; padding-top: 2%;" >
-                    <img src="{{sur_wine_dic[sur_wine_idx[2]]['imgurl']}}" width="65px" />
+              </td>
+              <td>
+                <div class="box3 col-md-3" style="text-align: center;">
+                  <div class="preview col-md-2 " style="margin: auto; margin-left: 37%; padding-top: 2%;" >
+                      <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="65px" id=setimg/>
+                  </div>
                 </div>
-            </div>
-            <div class="details col-md-4" style="margin-left: -120px; padding-top: 340px;" >
-              <h3 class="product-title">{{sur_wine_dic[sur_wine_idx[2]]['name']}} {{sur_wine_dic[sur_wine_idx[2]]['vintage']}}</h3>
-              <h4 class="type" style="margin-left: 180px; padding-top: 5px; margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[2]]['wine_type']}}</h4>
-              <div class="preview col-md-6" style="margin-left: 140px; margin-top: -5px;">
-              <a class="wineinfolink" href="#wineinfo.html"  >🔗 와인 상세페이지</a>
-              </div>
-            </div>
+              </td>
+            </tr>
+            <tr align="center">
+              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}} {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}} {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}} {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
+            </tr>
+            <tr align="center">
+              <td><h4 class="type" style="margin-left: 180px; margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
+              <td><h4 class="type" style="margin-left: 180px; margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
+              <td><h4 class="type" style="margin-left: 180px; margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
+            </tr>
+            <tr align="center">
+              <td><a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a></td>
+              <td><a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a></td>
+              <td><a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a></td>
+            </tr>
+          </table>
+
         </div>
     </div>           
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
