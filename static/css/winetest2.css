@@ -92,9 +92,9 @@ body {
   }
 
   .form_radio_btn {
-    width: 120px;
+    width: 125px;
     height : 42px;
-    margin: 15px 40px;
+    margin: 15px 35px;
     border: 1px solid #EAE7E7;
     border-radius: 10px;
   }
