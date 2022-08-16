@@ -85,7 +85,8 @@
               <a href="/contactus" class="nav-link" style="margin-right: 20px;">
                 Contact Us 
               </a>
-            </li>
+
+            
             {% if user_name %}
               <li class="nav-item">
                 <a class="nav-link" style="margin-right: 20px;">
@@ -102,7 +103,7 @@
                 <a href="/login" class="nav-link">
                   Login
                 </a>
-              </li>
+              
             {% endif %}
           </ul>
         </div>
@@ -123,7 +124,7 @@
   <!-- 찜한 와인 본문 -->
 
   {% for member in userwine_list %}
-       <li><p>
+        <p>
         <!-- {{ userwine_list[0].id }} -->
         <div class = "winepic1"> 
           <img class="image image--circle image--center" src={{member.imgurl}}>
@@ -138,9 +139,10 @@
           {{ member.wine_type }}
         </div>
         <div class ="link1">
-          <a href={{winelist}} class="link"> 상세 페이지</a> 
+          <!-- 수정 -->
+          <a href={{url_for("application.wineinfo",index=member.wine_id)}} class="link"> 상세 페이지</a> 
         </div>
-        </p></li>
+        </li>
   {% endfor %}
  
 </ul>
