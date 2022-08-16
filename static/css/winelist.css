@@ -98,7 +98,7 @@ body {
   left:1px;
  }
 
- .winepic1{
+.winepic1{
   position: absolute;
   left: 7%;
 }
@@ -108,7 +108,12 @@ body {
   height: 130px;
 }
 
-.wineidname{
+.image--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.winename{
   position: absolute;
   height: 35px;
   left: 170px;
@@ -140,3 +145,4 @@ body {
   color: black;
   font-size: 20px;
 }
+
