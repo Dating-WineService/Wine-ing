@@ -97,3 +97,46 @@ body {
   top: 10px;
   left:1px;
  }
+
+ .winepic1{
+  position: absolute;
+  left: 7%;
+}
+   
+.image {
+  width: 130px;
+  height: 130px;
+}
+
+.wineidname{
+  position: absolute;
+  height: 35px;
+  left: 170px;
+  top: 30px;
+  width: 250px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.year {
+  position: absolute;
+  height: 35px;
+  left: 170px;
+  top: 60px;
+  width: 250px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.winetype {
+  position: absolute;
+  height: 35px;
+  left: 170px;
+  top: 90px;
+  width: 250px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
