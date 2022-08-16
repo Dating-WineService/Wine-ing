@@ -24,18 +24,18 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <!--slick slider-->
 <link rel="stylesheet" href="../static/css/slick-theme.css"> 
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick.css') }}">
+<link href="{{ url_for('static', filename='css/slick-theme.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="../static/css/slick.css"> 
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick-theme.css') }}">
+<link href="{{ url_for('static', filename='css/slick.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="../static/js/slick.min.js"> 
-<script src="{{ url_for('static', filename='slick/slick.min.js') }}" > </script>
+<script src="{{ url_for('static', filename='js/slick.min.js') }}" > </script>
 <!-- typeit-->
 <script src="../static/js/typeit.min.js"></script> 
 <script src="{{ url_for('static', filename='js/typeit.js') }}" > </script>
 <!--customcss&js-->
 <script src="{{ url_for('static', filename='js/custom.js') }}" > </script>
 <link rel="stylesheet" href="../static/css/mainpage.css"> 
-<script src="{{ url_for('static', filename='css/mainpage.js') }}" > </script>
+<link href="{{ url_for('static', filename='css/mainpage.css') }}" rel="stylesheet">
 <script src="../static/js/custom.js"></script>
 
   </head>
@@ -54,48 +54,53 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
             
             <li class="nav-item">
-              <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+              <a href="/" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
                 <img src="../static/static_seohyun/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
-              <a href="service.html" class="nav-link" style="margin-right: 20px; ">
+              <a href="/service" class="nav-link" style="margin-right: 20px; ">
                 서비스 소개
               </a>
             </li>
             <li class="nav-item">
-              <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
+              <a href="/winenews" class="nav-link" style="margin-right: 20px;">
                 와인소식
               </a>
             </li>
             <li class="nav-item">
-              <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
+              <a href="/winedic" class="nav-link" style="margin-right: 20px;">
                 와인용어사전
               </a>
             </li>
             <li class="nav-item">
-              <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
+              <a href="/winemap" class="nav-link" style="margin-right: 20px;">
                 와인지도
               </a>
             </li>
             <li class="nav-item">
-              <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
+              <a href="/winelist" class="nav-link" style="margin-right: 20px;">
                 와인검색
               </a>
             </li>
             <li class="nav-item">
-              <a href="mywine.html" class="nav-link" style="margin-right: 20px;">
+              <a href="/mywine" class="nav-link" style="margin-right: 20px;">
                 나의와인
               </a>
             </li>
             <li class="nav-item">
-              <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
+              <a href="/winetest1" class="nav-link" style="margin-right:20px;">
                 와인 추천받기 
               </a>
             </li>
             <li class="nav-item">
-              <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
+              <a href="/wineinfo" class="nav-link" style="margin-right: 20px;">
                 와인정보
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/contactus" class="nav-link" style="margin-right: 20px;">
+                Contact Us 
               </a>
             </li>
             {% if user_name %}
