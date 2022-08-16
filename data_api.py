@@ -100,7 +100,9 @@ def mywineclick():
 def mywine():
     result=[]
 
-    data = db.session.query(UserWine).filter(UserWine.id.like(g.user_name)).all()
+    # data = db.session.query(UserWine).filter(UserWine.id.like(g.user_name)).all()
+    data = list(set(db.session.query(UserWine.id, UserWine.mywine).filter(UserWine.id.like(g.user_name)).all()))
+    print(data)
 
     for d in data:
         tmp={'id':d.id ,'mywine':d.mywine}
