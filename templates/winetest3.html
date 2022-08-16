@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static_jiyeon/images/wineicon.png">
+    <link rel="icon" href="../static/static_jiyeon/images/wineicon.png">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -16,9 +16,7 @@
     <!--custom js--> 
     <link rel="stylesheet" href="../static/css/app.css"> 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sb-admin-2.css') }}">
-    <link href="../static/css/sb-admin-2.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winetest3.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winetest3.css') }}">]
     <link href="../static/css/winetest3.css" rel="stylesheet">
    
    
@@ -38,7 +36,7 @@
             
             <li class="nav-item">
               <a href="index.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-                <img src="../static_jiyeon/images/wineicon.png" height="20px">
+                <img src="../static/static_jiyeon/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
@@ -101,15 +99,13 @@
     <div class="wrapper row">
       <div class="preview col-md-4" >
         <h1 class="product-title" style=" margin-bottom: 50px; padding-left: 100px; margin-top: -40px;">와인 취향 테스트</h1>
-   
       </div>
       <div class="preview col-md-8" >
         <h1 class="subdetail" style=" margin-bottom: 50px; margin-left: -80px; margin-top: -30px;">나의 취향에 맞는 와인을 추천해드립니다.<br>아래의 설문에 답을 해주세요.</h1>
-   
       </div>
     </div>
 
-    <div class="wrapper row">
+    <div class="wrapper row" style="margin-bottom: 39.4%">
       <div class="preview col-md-2 " style="padding-left: 150px; padding-top: 20px;" >
           <h2 class="question" tyle=" margin-bottom: 50px; padding-left: 0px; margin-top: 50px;"> 3. 각 맛에 대한 선호도를 선택해주세요 </h2>
       </div>
@@ -119,12 +115,12 @@
           <h3 class="idx7">medium</h3>
           <h3 class="idx8">high</h3>
         </div>
-    <form action="/winetest3" method="post">
-      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
+      <form action="/winetest3" method="post" style="margin-top: -44px">
+      <div class="preview col-md-8" style="padding-left: 147px; padding-top: 20px;" >
         <h3 class="idx1">산도</h3>
-        <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
+        <div class="mb-9" style="padding-left:0px; padding-top: 30px;">
           <label for="soft_acidic_level" class="form-label"></label>
-            <div class="row-md-12" style="width: 1000px; margin-left: -438px; margin-top: -202px; ">
+            <div class="row-md-12" style="margin-left: -435px; padding-top: 35px; ">
               <div class="form_radio_btn">
                 <input id="radio-1" type="radio" name="soft_acidic_level" value="1">
                 <label for="radio-1">1</label>
@@ -149,10 +145,10 @@
         </div>
       </div>
       <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
-        <h3 class="idx2">타닌</h3>
+        <h3 class="idx2">탄닌</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
             <label for="smooth_tannic_level" class="form-label"></label>
-              <div class="row-md-12" style="width: 1000px; margin-left: -910px; margin-top: -126px; ">
+              <div class="row-md-12" style="margin-left: -438px; margin-top: 20px;">
                 <div class="form_radio_btn">
                   <input id="radio-6" type="radio" name="smooth_tannic_level" value="1">
                   <label for="radio-6">1</label>
@@ -177,10 +173,10 @@
           </div>
       </div>
       <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px; width: 100px;" >
-        <h3 class="idx3" style="margin-left:-5px">바디</h3>
+        <h3 class="idx3" style="margin-left:-15px">바디</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
             <label for="light_bold_level" class="form-label"></label>
-              <div class="row-md-12" style="width: 1000px; margin-left: -1382px; margin-top: 5px; ">
+              <div class="row-md-12" style="margin-left: -437px; margin-top: 0px; ">
                 <div class="form_radio_btn">
                   <input id="radio-11" type="radio" name="light_bold_level" value="1">
                   <label for="radio-11">1</label>
@@ -204,17 +200,17 @@
               </div>
           </div>
       </div>
-      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
-        <h3 class="idx4">알콜</h3>
+      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px; width: 100px;" >
+        <h3 class="idx4" style="margin-left:0px">알콜</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
             <label for="Alcohol_content_level" class="form-label"></label>
-              <div class="row-md-12" style="width: 1000px; margin-left: -1854px; margin-top: 163px; ">
+              <div class="row-md-12" style="margin-left: -440px; margin-top: 5px; ">
                 <div class="form_radio_btn">
                   <input id="radio-16" type="radio" name="Alcohol_content_level" value="1">
                   <label for="radio-16">1</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-17" type="radio" name="Alcohol_content_level" value="2">
+                  <input id="radio-16" type="radio" name="Alcohol_content_level" value="2">
                   <label for="radio-17">2</label>
                 </div>
                 <div class="form_radio_btn">
@@ -231,13 +227,12 @@
                 </div> 
               </div>
           </div>
-        </div>
-      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
-        <h3 class="idx5">당도</h3>
+      </div>
+      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px; width: 100px;" >
+        <h3 class="idx5" style="margin-left:0px">당도</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
             <label for="dry_sweet_level" class="form-label"></label>
-            
-              <div class="row-md-12" style="width: 1000px; margin-left: -2326px; margin-top: 312px; ">
+              <div class="row-md-12" style="margin-left: -440px; margin-top: 5px; ">
                 <div class="form_radio_btn">
                   <input id="radio-21" type="radio" name="dry_sweet_level" value="1">
                   <label for="radio-21">1</label>
@@ -260,18 +255,18 @@
                 </div> 
               </div>
           </div>
+          <span>
+            <button type="submit" class="arrow-next" value="" style="margin-left: -1000px;"></button>
+          </span>
       </div>
-      <span>
-        <button type="submit" class="arrow-next" value="" style="margin-left: -100px;"></button>
-      </span>
-    </form>
-    </div>
-    <span>
-      <form action="winetest2.html">
-        <button type="submit" class="arrow-prev" value="" style="margin-left: -100px;"></button>
+        
+        <span>
+          <form action="winetest2.html">
+            <button type="submit" class="arrow-prev" value="" style="margin-left: -1000px;"></button>
+          </form>
+        </span>
       </form>
-    </span>
-    
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html> 

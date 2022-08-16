@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static_jiyeon/images/wineicon.png">
+    <link rel="icon" href="../static/static_jiyeon/images/wineicon.png">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -16,8 +16,6 @@
     <!--custom js--> 
     <link rel="stylesheet" href="../static/css/app.css"> 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sb-admin-2.css') }}">
-    <link href="../static/css/sb-admin-2.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winetest2.css') }}">
     <link href="../static/css/winetest2.css" rel="stylesheet">
   </head>
@@ -35,7 +33,7 @@
             
             <li class="nav-item">
               <a href="index.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-                <img src="../static_jiyeon/images/wineicon.png" height="20px">
+                <img src="../static/static_jiyeon/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
@@ -103,13 +101,13 @@
         <h1 class="subdetail" style=" margin-bottom: 50px; margin-left: -80px; margin-top: -30px;">나의 취향에 맞는 와인을 추천해드립니다.<br>아래의 설문에 답을 해주세요.</h1>
       </div>
     </div>
-    <div class="wrapper row">
+    <div class="wrapper row" style="margin-bottom: 37.7%" >
       <div class="preview col-md-2 " style="padding-left: 150px; padding-top: 20px;" >
           <h2 class="question" tyle=" margin-bottom: 50px; padding-left: 0px; margin-top: 50px;"> 2. 함께하고 싶은 음식 하나를 선택해주세요.</h2>
       </div>
       <div class="box1 col-md-9" style="padding-left:0px; padding-top: 0px;" >
         <form action="/winetest2" method="post">
-          <div class="row-md-12" style="width: 700px; margin-left: 70px; margin-top: 7px;">
+          <div class="container" style="margin-left:30px; margin-top: 28px; ">
             <div class="form_radio_btn">
               <input id="radio-1" type="radio" name="pairings" value="Poultry" checked>
               <label for="radio-1">닭고기</label>
@@ -182,16 +180,16 @@
               <input id="radio-18" type="radio" name="pairings" value="Aperitif">
               <label for="radio-18">식전주</label>
             </div>
-          </div>
+          </div>  
           <span>
-              <button type="submit" class="arrow-next" value="" style="margin-left: -100px;"></button>
+              <button type="submit" class="arrow-next" value="" style="margin-left: -1000px;"></button>
           </span>
         </form>
       </div>
       
       <span>
         <form action="/winetest1">
-          <button type="submit" class="arrow-prev" value="" style="margin-left: -100px;"></button>
+          <button type="submit" class="arrow-prev" value="" style="margin-left: -1000px;"></button>
         </form>
       </span>
       

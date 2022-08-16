@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static_jiyeon/images/wineicon.png">
+    <link rel="icon" href="../static/static_jiyeon/images/wineicon.png">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -16,8 +16,6 @@
     <!--custom js--> 
     <link rel="stylesheet" href="../static/css/app.css"> 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sb-admin-2.css') }}">
-    <link href="../static/css/sb-admin-2.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winetest1.css') }}">
     <link href="../static/css/winetest1.css" rel="stylesheet">
   </head>
@@ -34,7 +32,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
             <li class="nav-item">
               <a href="index.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-                <img src="../static_jiyeon/images/wineicon.png" height="20px">
+                <img src="../static/static_jiyeon/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
@@ -93,7 +91,7 @@
     </nav>
     <br>
     <br>
-    <div class="wrapper row">
+    <div class="wrapper row" style="margin-bottom: 27.5%">
       <div class="preview col-md-4" >
         <h1 class="product-title" style=" margin-bottom: 50px; padding-left: 100px; margin-top: -40px;">와인 취향 테스트</h1>
    
@@ -119,7 +117,6 @@
         </div>
         <span>
           <button type="submit" class="arrow-next" style="margin-left: -100px;"></button>
-   
       </span>
       </form>
       
