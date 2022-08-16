@@ -96,7 +96,7 @@ def winetest3():
 def winetest4():
     global sur4
     if request.method == 'POST':
-        sur4 = int(request.form['kprice_level'])
+        sur4 = int(request.form['price'])
         return redirect('/winetestresult')
     else:
         return render_template('winetest4.html')
