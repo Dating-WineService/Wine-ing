@@ -10,20 +10,35 @@ nav = Blueprint('nav', __name__)
 
 @nav.route('/service')
 def service():
-    return render_template('service.html',user_name=g.user_name)
+    if g.user_name:
+        return render_template('service.html', user_name=g.user_name)
+    else:
+        return render_template('service.html')
     
 @nav.route('/winenews')
 def winenews():
-    return render_template('winenews.html', user_name=g.user_name)
+    if g.user_name:
+        return render_template('winenews.html', user_name=g.user_name)
+    else:
+        return render_template('winenews.html')
     
 @nav.route('/winedic')
 def winedic():
-    return render_template('winedic.html', user_name=g.user_name)
+    if g.user_name:
+        return render_template('winedic.html', user_name=g.user_name)
+    else:
+        return render_template('winedic.html')
     
 @nav.route('/winemap')
 def winemap():
-    return render_template('winemap.html', user_name=g.user_name)
+    if g.user_name:
+        return render_template('winemap.html', user_name=g.user_name)
+    else:
+        return render_template('winemap.html')
     
 @nav.route('/contactus')
 def contactus():
-    return render_template('contactus.html',user_name=g.user_name)
+    if g.user_name:
+        return render_template('contactus.html', user_name=g.user_name)
+    else:
+        return render_template('contactus.html')

@@ -102,7 +102,7 @@ def mywineclick():
         userwine=UserWine(g.user_name,mywine)
         db.session.add(userwine)
         db.session.commit()
-        return redirect(url_for("application.mywine"), user_name=g.user_name)
+        return redirect(url_for("application.mywine"))
         # return redirect(url_for("wineinfo(index)"))
     else:
         return render_template("mywine.html", user_name=g.user_name)
@@ -126,7 +126,7 @@ def mywine():
             tmp['wine_vintage']=wine_info["vintage"]
             tmp['wine_type']=wine_info["wine_type"]
             result.append(tmp)
-            return render_template("mywine.html",userwine_list=result, user_name=g.user_name)
+        return render_template("mywine.html",userwine_list=result, user_name=g.user_name)
     else:
         return render_template('login.html')
     
