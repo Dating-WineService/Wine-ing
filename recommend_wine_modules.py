@@ -71,4 +71,4 @@ def start(df, top_n):
   return final_index
 
 # 설문조사에서 입력 받을 레코드 양식 -> bin_df
-wine_df = pd.read_csv('csv_data\wine_df.csv')
+wine_df = pd.read_csv('Dating_wineservice\csv_data\wine_df.csv')
