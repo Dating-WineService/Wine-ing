@@ -61,7 +61,7 @@ body {
     height: 44px;
     left: 120px;
     top: 210px;
-    font-family: 'Hind Vadodara';
+    font-family: "Gill Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 33px;    
@@ -86,7 +86,7 @@ body {
     width: 200px;
     height: 200px;
 
-    font-family: 'Hind Vadodara';
+    font-family: "Gill Sans";
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -106,217 +106,7 @@ body {
     color: rgba(255, 194, 194, 0.94);
   }
 
-
-  .box1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 375px;    
-    top: 290px;
-
-    background: rgba(255, 194, 194, 0.94);
-    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
-    border-radius: 16px;
-  }
-  .box1:hover{
-    background: rgba(246, 147, 147, 0.94);
-    color: rgba(255, 194, 194, 0.94); }
-
-  .q1{
-    position: fixed;
-    width: 129px;
-    height: 106.08px;
-    left: 410px;
-    top: 355px;
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-  }
-  .box2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 620px;    
-    top: 290px;
-
-    background: rgba(255, 194, 194, 0.94);
-    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
-    border-radius: 16px;
-  }
-  .box2:hover{
-    background: rgba(246, 147, 147, 0.94);
-    color: rgba(255, 194, 194, 0.94); }
-
-  .q2{
-    position: fixed;
-    width: 150px;
-    height: 106.08px;
-    left: 647px;
-    top: 355px;
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-  }
-  .box3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 865px;    
-    top: 290px;
-    background: rgba(255, 194, 194, 0.94);
-    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
-    border-radius: 16px;
-  }
-  .box3:hover{
-    background: rgba(246, 147, 147, 0.94);
-    color: rgba(255, 194, 194, 0.94); }
-
-  .q3{
-    position: fixed;
-    width: 250px;
-    height: 106.08px;
-    left: 842px;
-    top: 355px;
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-  }
-
-  .box4{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 375px;    
-    top: 530px;
-    background: rgba(255, 194, 194, 0.94);
-    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
-    border-radius: 16px;
-  }
-  .box4:hover{
-    background: rgba(246, 147, 147, 0.94);
-    color: rgba(255, 194, 194, 0.94); }
-
-  .q4{
-    position: fixed;
-    width: 150px;
-    height: 106.08px;
-    left: 397px;
-    top: 593px;
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-  }
-  .box5{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 620px;    
-    top: 530px;
-    background: rgba(255, 194, 194, 0.94);
-    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
-    border-radius: 16px;
-  }
-  .box5:hover{
-    background: rgba(246, 147, 147, 0.94);
-    color: rgba(255, 194, 194, 0.94); }
-
-  .q5{
-    position: fixed;
-    width: 160px;
-    height: 106.08px;
-    left: 642px;
-    top: 593px;
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-  }
-  .box6{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 865px;    
-    top: 530px;
-    background: rgba(255, 194, 194, 0.94);
-    box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
-    border-radius: 16px;
-  }
-  .box6:hover{
-    background: rgba(246, 147, 147, 0.94);
-    color: rgba(255, 194, 194, 0.94); }
-
-  .q6{
-    position: fixed;
-    width: 129px;
-    height: 106.08px;
-    left: 900px;
-    top: 593px;
-    font-family: 'Hind Vadodara';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #000000;
-  }
-
+  
   .arrow-prev,
   .arrow-next {
     position: relative;
