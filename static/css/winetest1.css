@@ -68,6 +68,7 @@ body {
     color: #2c1633;
   }
   .select {
+    position: relative;
     padding: 15px 10px;
   }
   .select input[type=radio]{

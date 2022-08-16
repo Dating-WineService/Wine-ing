@@ -38,11 +38,7 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1; }
   
-  .price, .alcohol,.year,.type,.region,.pairing{
-    
-    font-weight: bold; }
   .product-title{
-    
     font-weight: bold; 
     color:#fff;
   }
@@ -56,11 +52,9 @@ body {
     font-weight: lighter;
   }
   .question{
-    position: fixed;
+    position: relative;
     width: 656px;
     height: 44px;
-    left: 120px;
-    top: 210px;
     font-family: "Gill Sans";
     font-style: normal;
     font-weight: 600;
@@ -76,6 +70,7 @@ body {
   }
   .select input[type=radio]{
     display: none;
+    position: relative;
   }
   .select input[type=radio]+label{
     display: inline-block;
