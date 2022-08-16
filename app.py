@@ -10,6 +10,7 @@ from model import UserWine
 from data_api import application
 from user_api import user
 from survey_api import survey
+from nav_api import nav
 
 
 
@@ -19,6 +20,7 @@ app.secret_key = "secret"
 app.register_blueprint(user)
 app.register_blueprint(survey)
 app.register_blueprint(application)
+app.register_blueprint(nav)
 
 
 # DB config
@@ -32,10 +34,14 @@ import database
 
 @app.route('/')
 def main():
-    if g.user_name:
-        return render_template('mainpage.html', user_name=g.user_name)
-    else:
-        return render_template('login.html')
+    
+    return render_template('mainpage.html', user_name=g.user_name)
+    
+    ## 로그인 기능 안되시는 분들도 접속하도록 제한 풀어놓음
+    # if g.user_name:
+    #     return render_template('mainpage.html', user_name=g.user_name)
+    # else:
+    #     return render_template('login.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
