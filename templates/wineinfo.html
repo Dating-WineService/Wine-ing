@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static/static_seohyun/images/wineicon.png">
+    <link href="{{ url_for('static', filename='css/wineicon.css') }}" rel="icon">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -119,7 +119,7 @@
           <div class="row" style="margin-bottom: 100px; ">
             <div class="preview col-md-4">
             
-                <div class="tab-pane active" style="margin-left: 10%;"><img src={{imgurl}} height="550px"  /></div>
+                <div class="tab-pane active" style="margin-left: 15%;"><img src={{imgurl}} height="550px"  /></div>
                 <!-- style="margin-left: 200px;"  -->
             </div>
             <div class="details col-md-6" style="margin-left:10%;">
@@ -176,7 +176,7 @@
           <div class="wrapper row">
             <!-- 추천1 -->
             <div class="preview col-md-2 " style="padding-left: 6.5%;" >
-                <img src="{{winerecolist[0][3]}}" width="300px"  />
+                <img src="{{winerecolist[0][3]}}" width="100px"  />
 
             </div>
             <div class="details col-md-4" style=" padding-left: 10%; padding-top: 3.5%;" >
@@ -191,7 +191,7 @@
        
             <!-- 추천2 -->
             <div class="preview col-md-2 " style="padding-left: 3.5%;" >
-              <img src="{{winerecolist[1][3]}}" width="300px"/>
+              <img src="{{winerecolist[1][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 7%; padding-top: 3.5%;" >
@@ -208,7 +208,7 @@
           <div class="wrapper row">
             <!-- 추천 3 -->
             <div class="preview col-md-2 " style="padding-left: 6.5%;" >
-                <img src="{{winerecolist[2][3]}}" width="300px"/>
+                <img src="{{winerecolist[2][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 10%; padding-top: 3.5%;" >
@@ -222,7 +222,7 @@
        
             <!-- 추천 4 -->
             <div class="preview col-md-2 " style="padding-left: 3.5%;" >
-              <img src="{{winerecolist[3][3]}}" width="300px" />
+              <img src="{{winerecolist[3][3]}}" width="100px" />
 
             </div>
             <div class="details col-md-4" style="padding-left: 7%;  padding-top: 3.5%;" >
@@ -240,7 +240,7 @@
           <div class="wrapper row">
             <!-- 추천5 -->
             <div class="preview col-md-2 " style="padding-left: 6.5%;" >
-                <img src="{{winerecolist[4][3]}}" width="300px"/>
+                <img src="{{winerecolist[4][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 10%; padding-top: 3.5%;" >
@@ -256,7 +256,7 @@
        
             <!-- 추천6 -->
             <div class="preview col-md-2 " style="padding-left: 3.5%; " >
-              <img src="{{winerecolist[5][3]}}" width="300px"/>
+              <img src="{{winerecolist[5][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 7%;  padding-top: 3.5%;" >
