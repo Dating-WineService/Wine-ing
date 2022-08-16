@@ -1,8 +1,3 @@
-body {
-  padding:0;
-  margin:0;
-
-}
 
 .title {
   position: absolute;
@@ -143,8 +138,18 @@ text-align: center;
 margin-top: 7%;
 color: #333333;
 }
-.bg-gradient-main {
+
+html {
+  margin: 0; padding: 0;
+}
+body {
+  margin: 0; padding: 0;
   background-color: #B83642 ;
+}
+.wrapper {
+  padding: 0; margin: 0;
   background-image: linear-gradient(180deg, #B83642 10%,#d64e5b 100%);
-  background-size: cover;
+}
+.wrapper .content {
+  padding: 26px; /* Put any padding or styles here you want, it won't break gradient */
 }
