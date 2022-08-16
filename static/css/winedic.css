@@ -18,6 +18,11 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
+  .container{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 
 .details {
   display: -webkit-box;
@@ -36,11 +41,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.price, .alcohol,.year,.type,.region,.pairing{
-  
-  font-weight: bold; }
 .product-title{
-  
   font-weight: bold; 
   color:#fff;
 }
@@ -49,8 +50,10 @@ body {
   font-size: large;
   font-weight: lighter;
 }
+
 .alphabox{
   
+
     float: left;
     margin: 16px;
     width: 55px;
@@ -60,10 +63,82 @@ body {
     border: 1px solid #000;
     background: rgba(255, 230, 194, 0.69);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-}.alphabox:hover{
+}.alphabox1:hover{
     background: rgba(255, 213, 151, 0.69);
     color: #fff; }
 
+.alphabox2{
+    position: absolute;
+    float: left;
+    margin: 16px;
+    width: 55px;
+    height: 55px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+    background: rgba(255, 230, 194, 0.69);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}.alphabox2:hover{
+    background: rgba(255, 213, 151, 0.69);
+    color: #fff; }
+
+.alphabox3{
+    position: absolute;
+    float: left;
+    margin: 16px;
+    width: 55px;
+    height: 55px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+    background: rgba(255, 230, 194, 0.69);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}.alphabox3:hover{
+    background: rgba(255, 213, 151, 0.69);
+    color: #fff; }
+
+.dic_box{
+  position: relative;
+  float: left;
+  margin: 20px 40px;
+  width: 300px;
+  height: 130px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(255, 230, 194, 0.69);
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}.dic_box:hover{
+  background: rgba(255, 213, 151, 0.69);
+  color: #fff; }
+
+.alpha{
+  position: relative;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: #000;
+}
+
+.word{
+  padding: 5px 5px 1px 5px;
+  position: relative;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+}
+.explain{
+  padding: 1px 5px ;
+  position: relative;
+  font-family: "Gill Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+}
 
 .action1{
   position: fixed;
