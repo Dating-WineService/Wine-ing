@@ -27,7 +27,7 @@
 <!-- typeit-->
 <script src="../static/static_seohyun/js/typeit.min.js"></script> 
 <!--customcss&js-->
-
+<link rel="stylesheet" href="../static/css/contactus.css">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contactus.css') }}">
 
 
@@ -96,11 +96,24 @@
                 Contact Us 
               </a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-               Login
-              </a>
-            </li>
+            {% if user_name %}
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 20px;">
+                  {{ user_name }}님
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                  Logout
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="/login" class="nav-link">
+                  Login
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>

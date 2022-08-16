@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static/static_jiyeon/images/wineicon.png">
+    <link rel="icon" href="../static_jiyeon/images/wineicon.png">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--custom js--> 
-    
-    <link href="../static/static_jiyeon/css/winetest3.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static_jiyeon/css/app.css"> 
+    <!-- Custom styles for this template-->
+    <link href="../static_jiyeon/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../static_jiyeon/css/winetest3.css" rel="stylesheet">
    
    
   </head>
@@ -33,32 +35,32 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
             
             <li class="nav-item">
-              <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-                <img src="../static/static_seohyun/images/wineicon.png" height="20px">
+              <a href="index.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+                <img src="../static_jiyeon/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
-              <a href="service.html" class="nav-link" style="margin-right: 20px; ">
+              <a href="#top" class="nav-link" style="margin-right: 20px; ">
                 서비스 소개
               </a>
             </li>
             <li class="nav-item">
-              <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#intro" class="nav-link" style="margin-right: 20px;">
                 와인소식
               </a>
             </li>
             <li class="nav-item">
-              <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#services" class="nav-link" style="margin-right: 20px;">
                 와인용어사전
               </a>
             </li>
             <li class="nav-item">
-              <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#slogan" class="nav-link" style="margin-right: 20px;">
                 와인지도
               </a>
             </li>
             <li class="nav-item">
-              <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#gallery" class="nav-link" style="margin-right: 20px;">
                 와인검색
               </a>
             </li>
@@ -68,7 +70,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
+              <a href="winetest1.html" class="nav-link" style="margin-right: 20px;">
                 와인 추천받기 
               </a>
             </li>
@@ -78,7 +80,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#find-us" class="nav-link" style="margin-right: 20px;">
                 Contact Us 
               </a>
             </li>
@@ -104,7 +106,7 @@
    
       </div>
     </div>
-    
+
     <div class="wrapper row">
       <div class="preview col-md-2 " style="padding-left: 150px; padding-top: 20px;" >
           <h2 class="question" tyle=" margin-bottom: 50px; padding-left: 0px; margin-top: 50px;"> 3. 각 맛에 대한 선호도를 선택해주세요 </h2>
@@ -115,167 +117,159 @@
           <h3 class="idx7">medium</h3>
           <h3 class="idx8">high</h3>
         </div>
+    <form action="/winetest3" method="post">
       <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
         <h3 class="idx1">산도</h3>
         <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
-          <label for="acidity" class="form-label"></label>
-          <form action="">
-            <div class="row-md-12" style="width: 1000px; margin-left: -430px; margin-top: -195px; ">
+          <label for="soft_acidic_level" class="form-label"></label>
+            <div class="row-md-12" style="width: 1000px; margin-left: -438px; margin-top: -202px; ">
               <div class="form_radio_btn">
-                <input id="radio-1" type="radio" name="acidity" value="a1">
-                <label for="radio-1">12</label>
+                <input id="radio-1" type="radio" name="soft_acidic_level" value="1">
+                <label for="radio-1">1</label>
               </div> 
               <div class="form_radio_btn">
-                <input id="radio-2" type="radio" name="acidity" value="a2">
+                <input id="radio-2" type="radio" name="soft_acidic_level" value="2">
                 <label for="radio-2">2</label>
               </div>
               <div class="form_radio_btn">
-                <input id="radio-3" type="radio" name="acidity" value="a3">
+                <input id="radio-3" type="radio" name="soft_acidic_level" value="3" checked>
                 <label for="radio-3">3</label>
               </div> 
               <div class="form_radio_btn">
-                <input id="radio-4" type="radio" name="acidity" value="a4">
+                <input id="radio-4" type="radio" name="soft_acidic_level" value="4">
                 <label for="radio-4">4</label>
               </div>
               <div class="form_radio_btn">
-                <input id="radio-5" type="radio" name="acidity" value="a5">
+                <input id="radio-5" type="radio" name="soft_acidic_level" value="5">
                 <label for="radio-5">5</label>
               </div> 
             </div>
-          </form>
         </div>
       </div>
       <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
         <h3 class="idx2">타닌</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
-            <label for="tannin" class="form-label"></label>
-            <form action="">
-              <div class="row-md-12" style="width: 1000px; margin-left: -900px; margin-top: -118px; ">
+            <label for="smooth_tannic_level" class="form-label"></label>
+              <div class="row-md-12" style="width: 1000px; margin-left: -910px; margin-top: -126px; ">
                 <div class="form_radio_btn">
-                  <input id="radio-6" type="radio" name="tannin" value="t1">
-                  <label for="radio-6">13</label>
+                  <input id="radio-6" type="radio" name="smooth_tannic_level" value="1">
+                  <label for="radio-6">1</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-7" type="radio" name="tannin" value="t2">
+                  <input id="radio-7" type="radio" name="smooth_tannic_level" value="2">
                   <label for="radio-7">2</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-8" type="radio" name="tannin" value="t3">
+                  <input id="radio-8" type="radio" name="smooth_tannic_level" value="3" checked>
                   <label for="radio-8">3</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-9" type="radio" name="tannin" value="t4">
+                  <input id="radio-9" type="radio" name="smooth_tannic_level" value="4">
                   <label for="radio-9">4</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-10" type="radio" name="tannin" value="t5">
+                  <input id="radio-10" type="radio" name="smooth_tannic_level" value="5">
                   <label for="radio-10">5</label>
                 </div> 
               </div>
-            </form>
           </div>
       </div>
-      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px; height: 100px;" >
-        <h3 class="idx3">바디</h3>
+      <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px; width: 100px;" >
+        <h3 class="idx3" style="margin-left:-5px">바디</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
-            <label for="body" class="form-label"></label>
-            <form action="">
-              <div class="row-md-12" style="width: 1000px; margin-left: 180px; margin-top: 230px; ">
+            <label for="light_bold_level" class="form-label"></label>
+              <div class="row-md-12" style="width: 1000px; margin-left: -1382px; margin-top: 5px; ">
                 <div class="form_radio_btn">
-                  <input id="radio-11" type="radio" name="body" value="b1">
-                  <label for="radio-11">14</label>
+                  <input id="radio-11" type="radio" name="light_bold_level" value="1">
+                  <label for="radio-11">1</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-12" type="radio" name="body" value="b2">
+                  <input id="radio-12" type="radio" name="light_bold_level" value="2">
                   <label for="radio-12">2</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-13" type="radio" name="body" value="b3">
+                  <input id="radio-13" type="radio" name="light_bold_level" value="3" checked>
                   <label for="radio-13">3</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-14" type="radio" name="body" value="b4">
+                  <input id="radio-14" type="radio" name="light_bold_level" value="4">
                   <label for="radio-14">4</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-15" type="radio" name="body" value="b5">
+                  <input id="radio-15" type="radio" name="light_bold_level" value="5">
                   <label for="radio-15">5</label>
                 </div> 
               </div>
-            </form>
           </div>
       </div>
       <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
         <h3 class="idx4">알콜</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
-            <label for="alcohol" class="form-label"></label>
-            <form action="">
-              <div class="row-md-12" style="width: 1000px; margin-left: 420px; margin-top: -50px; ">
+            <label for="Alcohol_content_level" class="form-label"></label>
+              <div class="row-md-12" style="width: 1000px; margin-left: -1854px; margin-top: 163px; ">
                 <div class="form_radio_btn">
-                  <input id="radio-16" type="radio" name="alcohol" value="a1">
-                  <label for="radio-16">15</label>
+                  <input id="radio-16" type="radio" name="Alcohol_content_level" value="1">
+                  <label for="radio-16">1</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-17" type="radio" name="alcohol" value="a2">
+                  <input id="radio-17" type="radio" name="Alcohol_content_level" value="2">
                   <label for="radio-17">2</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-18" type="radio" name="alcohol" value="a3">
+                  <input id="radio-18" type="radio" name="Alcohol_content_level" value="3" checked>
                   <label for="radio-18">3</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-19" type="radio" name="alcohol" value="a4">
+                  <input id="radio-19" type="radio" name="Alcohol_content_level" value="4">
                   <label for="radio-19">4</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-20" type="radio" name="alcohol" value="a5">
+                  <input id="radio-20" type="radio" name="Alcohol_content_level" value="5">
                   <label for="radio-20">5</label>
                 </div> 
               </div>
-            </form>
           </div>
         </div>
       <div class="preview col-md-8" style="padding-left: 150px; padding-top: 20px;" >
         <h3 class="idx5">당도</h3>
           <div class="mb-9" style="padding-left:0px; padding-top: 0px;">
-            <label for="sweet" class="form-label"></label>
-            <form action="">
-              <div class="row-md-12" style="width: 1000px; margin-left: -100px; padding-left: 520px; ">
+            <label for="dry_sweet_level" class="form-label"></label>
+            
+              <div class="row-md-12" style="width: 1000px; margin-left: -2326px; margin-top: 312px; ">
                 <div class="form_radio_btn">
-                  <input id="radio-21" type="radio" name="sweet" value="s1">
-                  <label for="radio-1">16</label>
+                  <input id="radio-21" type="radio" name="dry_sweet_level" value="1">
+                  <label for="radio-21">1</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-22" type="radio" name="sweet" value="s2">
+                  <input id="radio-22" type="radio" name="dry_sweet_level" value="2">
                   <label for="radio-22">2</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-23" type="radio" name="sweet" value="s3">
+                  <input id="radio-23" type="radio" name="dry_sweet_level" value="3" checked>
                   <label for="radio-23">3</label>
                 </div> 
                 <div class="form_radio_btn">
-                  <input id="radio-24" type="radio" name="sweet" value="s4">
+                  <input id="radio-24" type="radio" name="dry_sweet_level" value="4">
                   <label for="radio-24">4</label>
                 </div>
                 <div class="form_radio_btn">
-                  <input id="radio-25" type="radio" name="sweet" value="s5">
+                  <input id="radio-25" type="radio" name="dry_sweet_level" value="5">
                   <label for="radio-25">5</label>
                 </div> 
               </div>
-            </form>
           </div>
       </div>
+      <span>
+        <button type="submit" class="arrow-next" value="" style="margin-left: -100px;"></button>
+      </span>
+    </form>
     </div>
     <span>
       <form action="winetest2.html">
         <button type="submit" class="arrow-prev" value="" style="margin-left: -100px;"></button>
       </form>
     </span>
-    <span>
-      <form action="winetest4.html">
-        <button type="submit" class="arrow-next" value="" style="margin-left: -100px;"></button>
-      </form>
-    </span>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html> 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static/static_jiyeon/images/wineicon.png">
+    <link rel="icon" href="../static_jiyeon/images/wineicon.png">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!--custom css-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winetest1.css') }}">
-    <link href="../static/css/winetest1.css" rel="stylesheet">
+    <!--custom js--> 
+    <link rel="stylesheet" href="../static_jiyeon/css/app.css"> 
+    <!-- Custom styles for this template-->
+    <link href="../static_jiyeon/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../static_jiyeon/css/winetest1.css" rel="stylesheet">
   </head>
 
   <body class="bg-gradient-main">
@@ -29,32 +31,32 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
             <li class="nav-item">
-              <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-                <img src="../static/static_seohyun/images/wineicon.png" height="20px">
+              <a href="index.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+                <img src="../static_jiyeon/images/wineicon.png" height="20px">
               </a>
             </li>
             <li class="nav-item">
-              <a href="service.html" class="nav-link" style="margin-right: 20px; ">
+              <a href="#top" class="nav-link" style="margin-right: 20px; ">
                 서비스 소개
               </a>
             </li>
             <li class="nav-item">
-              <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#intro" class="nav-link" style="margin-right: 20px;">
                 와인소식
               </a>
             </li>
             <li class="nav-item">
-              <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#services" class="nav-link" style="margin-right: 20px;">
                 와인용어사전
               </a>
             </li>
             <li class="nav-item">
-              <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#slogan" class="nav-link" style="margin-right: 20px;">
                 와인지도
               </a>
             </li>
             <li class="nav-item">
-              <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#gallery" class="nav-link" style="margin-right: 20px;">
                 와인검색
               </a>
             </li>
@@ -64,22 +66,22 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
+              <a href="/winetest1" class="nav-link" style="margin-right: 20px;">
                 와인 추천받기 
               </a>
             </li>
             <li class="nav-item">
-              <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#wineinfo" class="nav-link" style="margin-right: 20px;">
                 와인정보
               </a>
             </li>
             <li class="nav-item">
-              <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
+              <a href="#find-us" class="nav-link" style="margin-right: 20px;">
                 Contact Us 
               </a>
             </li>
             <li class="nav-item">
-              <a href="login.html" class="nav-link">
+              <a href="/login" class="nav-link">
                Login
               </a>
             </li>
@@ -89,7 +91,7 @@
     </nav>
     <br>
     <br>
-    <div class="wrapper row" style="margin-bottom: 30.8%;">
+    <div class="wrapper row">
       <div class="preview col-md-4" >
         <h1 class="product-title" style=" margin-bottom: 50px; padding-left: 100px; margin-top: -40px;">와인 취향 테스트</h1>
    
@@ -100,26 +102,26 @@
       <div class="preview col-md-2 " style="padding-left: 150px; padding-top: 20px;" >
           <h2 class="question" tyle=" margin-bottom: 50px; padding-left: 0px; margin-top: 50px;">1. 선호하는 분위기 하나를 선택해주세요.</h2>
       </div>
-      <form action="">
+      <form action="/winetest1" method="post">
         <div class="select" style="padding-left: 200px; padding-top: 80px;">
-          <input type="radio" id="select" name="shop"><label for="select"><br>가볍게<br>즐기고<br>싶을 때</label>
+          <input type="radio" id="select" name="shop" value="1" checked><label for="select"><br>가볍게<br>즐기고<br>싶을 때</label>
         </div>
         <div class="select" style="padding-left: 470px; margin-top: -30px;">
-          <input type="radio" id="select2" name="shop"><label for="select2"><br>달콤하게<br>즐기고<br>싶을 때</label>
+          <input type="radio" id="select2" name="shop" value="2"><label for="select2"><br>달콤하게<br>즐기고<br>싶을 때</label>
         </div>
         <div class="select" style="padding-left: 740px; margin-top: -30px;">
-          <input type="radio" id="select3" name="shop"><label for="select3"><h6><br></h6><br>파티 분위기<br>내고 싶을 때</label>
+          <input type="radio" id="select3" name="shop" value="3"><label for="select3"><h6><br></h6><br>파티 분위기<br>내고 싶을 때</label>
         </div>
         <div class="select" style="padding-left: 1010px; margin-top: -30px;">
-          <input type="radio" id="select4" name="shop"><label for="select4"><h6><br></h6><br>취하고<br>싶을 때</label>
+          <input type="radio" id="select4" name="shop" value="4"><label for="select4"><h6><br></h6><br>취하고<br>싶을 때</label>
         </div>
-      </form>
-      <span>
-        <form action="winetest2.html">
-          <button type="submit" class="arrow-next" value="" style="margin-left: -100px;"></button>
-        </form>
+        <span>
+          <button type="submit" class="arrow-next" style="margin-left: -100px;"></button>
+   
       </span>
+      </form>
+      
     </div>      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>              
   </body>
-</html>
+</html> 

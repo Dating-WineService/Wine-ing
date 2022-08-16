@@ -92,11 +92,24 @@
                 Contact Us 
               </a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-               Login
-              </a>
-            </li>
+            {% if user_name %}
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 20px;">
+                  {{ user_name }}님
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                  Logout
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="/login" class="nav-link">
+                  Login
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -109,18 +122,18 @@
 
   <!-- 와인 목록 정렬 조건 or 검색탭 구현 -->
   <div class = "stars"> 
-    <a href={{url_for("winelist")}} class="stars" role="button">기본</a>
+    <a href={{url_for("application.winelist")}} class="stars" role="button">기본</a>
   </div>
   <div class = "stars"> 
-    <a href={{url_for("wineliststar")}} class="stars" role="button">평점 높은 순</a>
+    <a href={{url_for("application.wineliststar")}} class="stars" role="button">평점 높은 순</a>
   </div>
   <div class = "reviews"> 
-    <a href={{url_for("winelistprice")}} class="reviews" role="button">가격 순</a>
+    <a href={{url_for("application.winelistprice")}} class="reviews" role="button">가격 순</a>
   </div>
 
   <!-- 와인목록 -->
   {% for wine in wine_list %} 
-  <a href={{url_for("wineinfo", index=wine[1])}}>
+  <a href={{url_for("application.wineinfo", index=wine[1])}}>
     <section class ="main"> 
       <div class ="container py-5">
         <div class = "row justify-content-center mb-3">

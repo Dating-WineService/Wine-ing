@@ -16,126 +16,140 @@
     <link href="./winenews.css" rel="stylesheet">
     <!-- css 연결-->
     <link href="../static/css/winenews.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/winenews.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/winenews.css') }}">
   </head>
 
 <body  class="bg-gradient-main">
- <!--top navar-->
-    <nav class="navbar navbar-expand-lg py-3  fixed-top">
-
-      <div class="container-fluid">
-        
-       
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
-            
-            <li class="nav-item">
-              <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
-                <img src="../static/static_seohyun/images/wineicon.png" height="20px">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="service.html" class="nav-link" style="margin-right: 20px; ">
-                서비스 소개
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
-                와인소식
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
-                와인용어사전
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
-                와인지도
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
-                와인검색
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="mywine.html" class="nav-link" style="margin-right: 20px;">
-                나의와인
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
-                와인 추천받기 
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
-                와인정보
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
-                Contact Us 
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-               Login
-              </a>
-            </li>
-          </ul>
+  <div class ="wrapper">
+    <div class = "content"> 
+      <nav class="navbar navbar-expand-lg py-3  fixed-top">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"  >
+              
+              <li class="nav-item">
+                <a href="mainpage.html" class="navbar-brand align-middle" style="margin-right: 20px;  margin-left: 20px; ">
+                  <img src="../static/static_seohyun/images/wineicon.png" height="20px">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="service.html" class="nav-link" style="margin-right: 20px; ">
+                  서비스 소개
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="winenews.html" class="nav-link" style="margin-right: 20px;">
+                  와인소식
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="winedic.html" class="nav-link" style="margin-right: 20px;">
+                  와인용어사전
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="winemap.html" class="nav-link" style="margin-right: 20px;">
+                  와인지도
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="winelist.html" class="nav-link" style="margin-right: 20px;">
+                  와인검색
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="mywine.html" class="nav-link" style="margin-right: 20px;">
+                  나의와인
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="winetest1.html" class="nav-link" style="margin-right:20px;">
+                  와인 추천받기 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="wineinfo.html" class="nav-link" style="margin-right: 20px;">
+                  와인정보
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="contactus.html" class="nav-link" style="margin-right: 20px;">
+                  Contact Us 
+                </a>
+              </li>
+              {% if user_name %}
+                <li class="nav-item">
+                  <a class="nav-link" style="margin-right: 20px;">
+                    {{ user_name }}님
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/logout" class="nav-link">
+                    Logout
+                  </a>
+                </li>
+              {% else %}
+                <li class="nav-item">
+                  <a href="/login" class="nav-link">
+                    Login
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+          </div>
         </div>
+      </nav>
+   
+      
+      <!-- 제목 및 설명-->
+      <div class ="title">
+        모두에게 친절한, 오늘의 와인 뉴스
       </div>
-    </nav>
- 
-    
-    <!-- 제목 및 설명-->
-    <div class ="title">
-      모두에게 친절한, 오늘의 와인 뉴스
-    </div>
-    <div class= "smalltitle">
-      오늘의 와인 소식을 알려드립니다!
-    </div>
-
-  <!-- 와인 뉴스 본문-->
-  <header class ="container-fluid">
-    <div class="container px-5 py-6">
-      <div class="row"  style="margin-bottom: 22.5%;">
-          <div class="col mx-1"> 
-            <a href="https://www.wine21.com/11_news/news_view.html?Idx=17712" class="link">
-              <image src = "../static/static_yujin/images/pic1.png" class="row--pic"></image> </a>
-              <div class = "description1"> 파티할때 가져가면 좋은 와인! </div>
-          </div>
-          <div class="col mx-1"> 
-            <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
-              <image src = "../static/static_yujin/images/pic2.png" class="row--pic"></image> </a>
-              <div class = "description1">  와인의 다양한 효과 </div>
-          </div>
-          <div class="col mx-1">
-            <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
-              <image src = "../static/static_yujin/images/pic3.png" class="row--pic"></image> </a>
-              <div class = "description1"> 맛까지 완벽한 가성비 와인 </div>
-          </div>
-          <div class="col mx-1">
-            <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
-              <image src = "../static/static_yujin/images/pic4.png" class="row--pic"></image> </a>
-              <div class = "description1"> 여행 가기 전 와인 쇼핑 </div>
-          </div>
-          <div class="col mx-1">
-            <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
-              <image src = "../static/static_yujin/images/pic5.png" class="row--pic"></image> </a>
-              <div class = "description1"> 대한민국 와인 베스트 100 </div>
-          </div>
+      <div class= "smalltitle">
+        오늘의 와인 소식을 알려드립니다!
       </div>
-  </div>
-  </header>
-
   
+    <!-- 와인 뉴스 본문-->
+    <header class ="container-fluid">
+      <div class="container px-5 py-6">
+        <div class="row"  style="margin-bottom: 22.5%;">
+            <div class="col mx-1"> 
+              <a href="https://www.wine21.com/11_news/news_view.html?Idx=17712" class="link">
+                <image src = "../static/static_yujin/images/pic1.png" class="row--pic"></image> </a>
+                <div class = "description1"> 파티할때 가져가면 좋은 와인! </div>
+            </div>
+            <div class="col mx-1"> 
+              <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
+                <image src = "../static/static_yujin/images/pic2.png" class="row--pic"></image> </a>
+                <div class = "description1">  와인의 다양한 효과 </div>
+            </div>
+            <div class="col mx-1">
+              <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
+                <image src = "../static/static_yujin/images/pic3.png" class="row--pic"></image> </a>
+                <div class = "description1"> 맛까지 완벽한 가성비 와인 </div>
+            </div>
+            <div class="col mx-1">
+              <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
+                <image src = "../static/static_yujin/images/pic4.png" class="row--pic"></image> </a>
+                <div class = "description1"> 여행 가기 전 와인 쇼핑 </div>
+            </div>
+            <div class="col mx-1">
+              <a href="https://www.aladin.co.kr/shop/ebook/wPreviewViewer.aspx?itemid=106924659" class="link">
+                <image src = "../static/static_yujin/images/pic5.png" class="row--pic"></image> </a>
+                <div class = "description1"> 대한민국 와인 베스트 100 </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    </div>
+  </div> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

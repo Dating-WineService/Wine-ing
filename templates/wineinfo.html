@@ -26,6 +26,7 @@
     <!-- <link href="../static/static_seohyun/css/wineinfo.css" rel="stylesheet"> -->
     <!--CSS 파일 링크-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wineinfo.css') }}">
+    <link rel="stylesheet" href="../static/css/wineinfo.css">
   </head>
 
   <body class="bg-gradient-main" >
@@ -91,11 +92,24 @@
                 Contact Us 
               </a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link">
-               Login
-              </a>
-            </li>
+            {% if user_name %}
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 20px;">
+                  {{ user_name }}님
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                  Logout
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="/login" class="nav-link">
+                  Login
+                </a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -171,7 +185,7 @@
               <h4 class="year">{{winerecolist[0][1]}}</h4>
               <h4 class="type">{{winerecolist[0][2]}}</h4>
               <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-              <a href={{url_for("wineinfo",index=winerecolist[0][4])}} style="color:black">🔗 와인 상세페이지</a>
+              <a href={{url_for("application.wineinfo",index=winerecolist[0][4])}} style="color:black">🔗 와인 상세페이지</a>
     
             </div>
        
@@ -186,7 +200,7 @@
               <h4 class="year">{{winerecolist[1][1]}}</h4>
               <h4 class="type">{{winerecolist[1][2]}}</h4>
              <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-             <a href={{url_for("wineinfo",index=winerecolist[1][4])}} style="color:black">🔗 와인 상세페이지</a>
+             <a href={{url_for("application.wineinfo",index=winerecolist[1][4])}} style="color:black">🔗 와인 상세페이지</a>
             </div>
 
           </div>
@@ -203,7 +217,7 @@
               <h4 class="year">{{winerecolist[2][1]}}</h4>
               <h4 class="type">{{winerecolist[2][2]}}</h4>
               <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-              <a href={{url_for("wineinfo",index=winerecolist[2][4])}} style="color:black">🔗 와인 상세페이지</a>
+              <a href={{url_for("application.wineinfo",index=winerecolist[2][4])}} style="color:black">🔗 와인 상세페이지</a>
             </div>
        
             <!-- 추천 4 -->
@@ -217,7 +231,7 @@
               <h4 class="year">{{winerecolist[3][1]}}</h4>
               <h4 class="type">{{winerecolist[3][2]}}</h4>
              <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-             <a href={{url_for("wineinfo",index=winerecolist[3][4])}} style="color:black">🔗 와인 상세페이지</a>
+             <a href={{url_for("application.wineinfo",index=winerecolist[3][4])}} style="color:black">🔗 와인 상세페이지</a>
          
 
             </div>
@@ -235,7 +249,7 @@
               <h4 class="year">{{winerecolist[4][1]}}</h4>
               <h4 class="type">{{winerecolist[4][2]}}</h4>
               <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-              <a href={{url_for("wineinfo",index=winerecolist[4][4])}} style="color:black">🔗 와인 상세페이지</a>
+              <a href={{url_for("application.wineinfo",index=winerecolist[4][4])}} style="color:black">🔗 와인 상세페이지</a>
            
 
             </div>
@@ -251,7 +265,7 @@
               <h4 class="year">{{winerecolist[5][1]}}</h4>
               <h4 class="type">{{winerecolist[5][2]}}</h4>
               <!-- <a class="wineinfolink" href="winemap.html" >🔗 와인 상세페이지</a> -->
-              <a href={{url_for("wineinfo",index=winerecolist[5][4])}} style="color:black"}>🔗 와인 상세페이지</a>
+              <a href={{url_for("application.wineinfo",index=winerecolist[5][4])}} style="color:black"}>🔗 와인 상세페이지</a>
          
 
             </div>
