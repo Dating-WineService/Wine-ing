@@ -1,7 +1,7 @@
 body {
   padding:0;
   margin:0;
-  background-image: url("../static_yujin/images/배경색.png");
+  background-image: url("../static/static_yujin/images/배경색.png");
   background-size:cover;
   background-attachment: fixed;
   background-position:center;
