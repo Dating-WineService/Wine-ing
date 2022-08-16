@@ -127,12 +127,12 @@
                 <h1>당신을 위한 와인서비스</h1>
                 <p>이런 서비스도 <br> 한번 써보세요 </p>
                 <div class="info-btns">
-                    <a href="#none" class="btn news"><img src="../static/static_seohyun/images/newspaper.png" width="80px" height="80px"></a>
-                    <a href="#none" class="btn mywine"><img src="../static/static_seohyun/images/mywine.png" width="80px" height="80px"></a><br>
-                    <a href="#none" class="btn dictionary"><img src="../static/static_seohyun/images/dictionary.png"80px" height="80px"></a>
-                    <a href="#none" class="btn recommendation"><img src="../static/static_seohyun/images/winebottle.png" width="80px" height="80px"></a><br>
-                    <a href="winemap.html" class="btn map"><img src="../static/static_seohyun/images/map2.png" width="80px" height="80px"></a>
-                    <a href="#none" class="btn login"><img src="../static/static_seohyun/images/winesearch.png" width="80px" height="80px"></a>
+                    <a href="{{url_for("nav.winenews")}}" class="btn news"><img src="../static/static_seohyun/images/newspaper.png" width="80px" height="80px"></a>
+                    <a href="{{url_for("application.mywine")}}" class="btn mywine"><img src="../static/static_seohyun/images/mywine.png" width="80px" height="80px"></a><br>
+                    <a href="{{url_for("nav.winedic")}}" class="btn dictionary"><img src="../static/static_seohyun/images/dictionary.png"80px" height="80px"></a>
+                    <a href="{{url_for("survey.winetest1")}}" class="btn recommendation"><img src="../static/static_seohyun/images/winebottle.png" width="80px" height="80px"></a><br>
+                    <a href="{{url_for("nav.winemap")}}" class="btn map"><img src="../static/static_seohyun/images/map2.png" width="80px" height="80px"></a>
+                    <a href="{{url_for("application.winelist")}}" class="btn login"><img src="../static/static_seohyun/images/winesearch.png" width="80px" height="80px"></a>
                    
                 </div>
 
@@ -165,7 +165,7 @@
                 <div class="info6">
                     <h2>와인검색 · 유사한 와인 추천</h2>
                     <h3>와인을 검색하고 검색한 와인과  <br>유사한 와인들을 추천받아보세요. </h3>
-                    <a href="{{url_for("application.winelist")}}" ><h3 class="fw-semibold">🔗 와인 용어사전 바로가기 </h3></a>
+                    <a href="{{url_for("application.winelist")}}" ><h3 class="fw-semibold">🔗 와인검색 · 유사한 와인 추천 바로가기 </h3></a>
                 </div>
 
                 
