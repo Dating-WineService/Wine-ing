@@ -140,7 +140,7 @@ def winetestresult():
     print(input_survey)
 
     # calculate result
-    wine_df = pd.read_csv('csv_data\\wine_df.csv')
+    wine_df = pd.read_csv('csv_data\wine_df.csv')
 
     sur_wine_idx = survey_recommend(input_survey)
     col = ['name', 'vintage', 'wine_type', 'imgurl']

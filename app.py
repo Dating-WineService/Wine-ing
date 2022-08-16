@@ -5,6 +5,7 @@ from unittest import result
 from flask import Flask,render_template,request,redirect,url_for,g,session
 import sys
 from db_connect import db
+from model import User
 from model import UserWine
 from data_api import application
 from user_api import user
@@ -32,7 +33,7 @@ import database
 @app.route('/')
 def main():
     if g.user_name:
-        return render_template("mainpage.html")
+        return render_template('mainpage.html', user_name=g.user_name)
     else:
         return render_template('login.html')
 
