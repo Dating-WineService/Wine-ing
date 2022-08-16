@@ -61,11 +61,9 @@ body {
     font-weight: lighter;
   }
   .question{
-    position: fixed;
+    position: relative;
     width: 656px;
     height: 44px;
-    left: 120px;
-    top: 180px;
     font-family: "Gill Sans";
     font-style: normal;
     font-weight: 600;
@@ -92,9 +90,9 @@ body {
   }
 
   .form_radio_btn {
-    width: 125px;
+    width: 82%;
     height : 42px;
-    margin: 15px 35px;
+    margin: 15px 40px;
     border: 1px solid #EAE7E7;
     border-radius: 10px;
   }
