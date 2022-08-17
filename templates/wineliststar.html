@@ -147,19 +147,19 @@
                         <div class ="mask" style = "background-color: rgba(253, 253, 253, 0.15);">
                           <!-- 이미지 추가 -->
                           <div clas = "winepic">
-                            <img class="image image--center" src={{wine[8]}}>
+                            <img class="image image--center" src={{wine[10]}}>
                           </div>
 
                           <cdiv class = "winename">
-                            {{wine[2]}}
+                            {{wine[4]}}
                           </cdiv>
 
                           <div class = "year">
-                            {{wine[3]}}
+                            {{wine[5]}}
                           </div>
 
                           <div class ="winetype">
-                            {{wine[4]}}
+                            {{wine[6]}}
                           </div>
 
                         </div>
@@ -176,7 +176,32 @@
   </a> 
   {% endfor %} 
 
+ <!-- back to top 버튼 -->
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
  
+ <!-- back to top 버튼 js -->
+ <script type="text/javascript">
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
 </body>
 
 </html>
