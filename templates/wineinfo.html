@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wine recommendation : Main page </title>
-    <link rel="icon" href="../static/static_seohyun/images/wineicon.png">
+    <link href="{{ url_for('static', filename='css/wineicon.css') }}" rel="icon">
     <!--bootsrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--fontawesome-->
@@ -119,10 +119,12 @@
           <div class="row" style="margin-bottom: 100px; ">
             <div class="preview col-md-4">
             
-                <div class="tab-pane active" style="margin-left: 10%;"><img src={{imgurl}} height="550px"  /></div>
+
+                <div class="tab-pane active" style="margin-left: 30%;"><img src={{imgurl}} height="550px"  /></div>
+
                 <!-- style="margin-left: 200px;"  -->
             </div>
-            <div class="details col-md-6" style="margin-left:10%;">
+            <div class="details col-md-6" style="margin-left:4%;">
               <h2 class="product-title ">{{name}}</h2>
               <div class="rating">
                 <div class="stars">
@@ -152,7 +154,7 @@
         <!-- 찜하기 버튼 - 폼 형식으로 변경하기 -->
         <div class="action">
           <form action="/mywineclick" method="POST" >
-            <p> 와인찜하기<input type="hidden" value = {{wine_id}} id="mywine" name = "mywine"> </p>
+            <p><input type="hidden" value = {{wine_id}} id="mywine" name = "mywine"> </p>
             <input type="submit" value="찜하기"/>
           </form>
           <!-- <button class="add-to-cart btn btn-default" type="button"><span class="fa fa-heart"></span><span> </span>와인찜하기</button>  -->
@@ -162,12 +164,12 @@
 
           <div class="wrapper row">
             <div class="preview col-md-4" >
-              <h1 class="product-title" style=" margin-bottom: 15%; padding-left:20%; margin-top: -5%; ">이 와인과<br>비슷한 와인 추천받기</h1>
+              <h1 class="product-title" style=" margin-bottom: 15%; padding-left:30%; margin-top: 10%; ">이 와인과<br>비슷한 와인 추천받기</h1>
          
             </div>
 
             <div class="preview col-md-8" >
-              <h1 class="subdetail" style=" margin-bottom: 13%;  margin-left: 10%; margin-top: 0.8%;">당도 / 바디감 / 00 / 00 을 기준으로 현재 와인과 가장 유사한 와인을 추천해드립니다.
+              <h1 class="subdetail" style=" margin-bottom: 13%;  margin-left: 10%; margin-top: 9%;">당도 / 바디감을 기준으로 현재 와인과 가장 유사한 와인을 추천해드립니다.
                 <br>저희 팀에서 직접 진행한 데이터 분석 서비스를 이용해보세요!</h1>
             </div>
           </div>
@@ -175,8 +177,9 @@
      
           <div class="wrapper row">
             <!-- 추천1 -->
-            <div class="preview col-md-2 " style="padding-left: 6.5%;" >
-                <img src="{{winerecolist[0][3]}}" width="300px"  />
+            <div class="preview col-md-2 " style="padding-left:12%;margin-bottom:2%;" >
+
+                <img src="{{winerecolist[0][3]}}" width="100px"  />
 
             </div>
             <div class="details col-md-4" style=" padding-left: 10%; padding-top: 3.5%;" >
@@ -190,8 +193,10 @@
             </div>
        
             <!-- 추천2 -->
-            <div class="preview col-md-2 " style="padding-left: 3.5%;" >
-              <img src="{{winerecolist[1][3]}}" width="300px"/>
+
+            <div class="preview col-md-2 " style="padding-left: 8%;margin-bottom:2%;" >
+
+              <img src="{{winerecolist[1][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 7%; padding-top: 3.5%;" >
@@ -207,8 +212,10 @@
 
           <div class="wrapper row">
             <!-- 추천 3 -->
-            <div class="preview col-md-2 " style="padding-left: 6.5%;" >
-                <img src="{{winerecolist[2][3]}}" width="300px"/>
+
+            <div class="preview col-md-2 " style="padding-left: 12%; margin-bottom:2%;" >
+
+                <img src="{{winerecolist[2][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 10%; padding-top: 3.5%;" >
@@ -221,8 +228,10 @@
             </div>
        
             <!-- 추천 4 -->
-            <div class="preview col-md-2 " style="padding-left: 3.5%;" >
-              <img src="{{winerecolist[3][3]}}" width="300px" />
+
+            <div class="preview col-md-2 " style="padding-left: 8%;margin-bottom:2%;" >
+
+              <img src="{{winerecolist[3][3]}}" width="100px" />
 
             </div>
             <div class="details col-md-4" style="padding-left: 7%;  padding-top: 3.5%;" >
@@ -239,8 +248,10 @@
           </div>
           <div class="wrapper row">
             <!-- 추천5 -->
-            <div class="preview col-md-2 " style="padding-left: 6.5%;" >
-                <img src="{{winerecolist[4][3]}}" width="300px"/>
+
+            <div class="preview col-md-2 " style="padding-left: 12%;margin-bottom:2%;" >
+
+                <img src="{{winerecolist[4][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 10%; padding-top: 3.5%;" >
@@ -255,8 +266,9 @@
             </div>
        
             <!-- 추천6 -->
-            <div class="preview col-md-2 " style="padding-left: 3.5%; " >
-              <img src="{{winerecolist[5][3]}}" width="300px"/>
+
+            <div class="preview col-md-2 " style="padding-left: 8%; margin-bottom:2%;" >
+ <img src="{{winerecolist[5][3]}}" width="100px"/>
 
             </div>
             <div class="details col-md-4" style="padding-left: 7%;  padding-top: 3.5%;" >
