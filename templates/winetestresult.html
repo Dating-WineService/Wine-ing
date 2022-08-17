@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Wine recommendation : Main page </title>
-        <link rel="icon" href="../static_jiyeon/images/wineicon.png">
+        <link rel="icon" href="../static/static_jiyeon/images/wineicon.png">
         <!--bootsrap css-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!--fontawesome-->
@@ -113,30 +113,37 @@
         <div class="wrapper row" style="margin-top: 5%; margin-bottom: 30%">
           <table align="center">
             <tr align="center">
-              <td>
-                <div class="box1 col-md-3" style="text-align: center;">
-                      <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="65px" id=setimg/>
-                </div>
-              </td>
-              <td>
-                <div class="box2 col-md-3" style="text-align: center;">
-                  <div class="preview col-md-2 " style="margin: auto; margin-left: 37%; padding-top: 2%;" >
-                      <img src="{{sur_wine_dic[sur_wine_idx[1]]['imgurl']}}" width="65px" id=setimg/>
+              <td align="center">
+                <div class="box1 col-md-3" style="align-items: center;">
+                  <div class="preview col-md-2 " style="margin: auto; margin-left: 40%; padding-top: 2%;" >
+                    <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="29%" id=setimg/>
                   </div>
                 </div>
               </td>
-              <td>
-                <div class="box3 col-md-3" style="text-align: center;">
-                  <div class="preview col-md-2 " style="margin: auto; margin-left: 37%; padding-top: 2%;" >
-                      <img src="{{sur_wine_dic[sur_wine_idx[2]]['imgurl']}}" width="65px" id=setimg/>
+              <td align="center">
+                <div class="box2 col-md-3" style="align-items: center;">
+                  <div class="preview col-md-2 " style="margin: auto; margin-left: 40%; padding-top: 2%;" >
+                      <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="29%" id=setimg/>
+                  </div>
+                </div>
+              </td>
+              <td align="center">
+                <div class="box3 col-md-3" style="align-items: center;">
+                  <div class="preview col-md-2 " style="margin: auto; margin-left: 40%; padding-top: 2%;" >
+                      <img src="{{sur_wine_dic[sur_wine_idx[0]]['imgurl']}}" width="29%" id=setimg/>
                   </div>
                 </div>
               </td>
             </tr>
             <tr align="center">
-              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}} {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
-              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[1]]['name']}} {{sur_wine_dic[sur_wine_idx[1]]['vintage']}}</h3></td>
-              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[2]]['name']}} {{sur_wine_dic[sur_wine_idx[2]]['vintage']}}</h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px; white-space: pre-line; width: 60%; "> {{sur_wine_dic[sur_wine_idx[0]]['name']}} </h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px; white-space: pre-line; width: 60%;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}}</h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px; white-space: pre-line; width: 60%;"> {{sur_wine_dic[sur_wine_idx[0]]['name']}} </h3></td>
+            </tr>
+            <tr align="center">
+              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
+              <td><h3 class="product-title" style="margin-bottom: 5px;"> {{sur_wine_dic[sur_wine_idx[0]]['vintage']}}</h3></td>
             </tr>
             <tr align="center">
               <td><h4 class="type" style="margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
