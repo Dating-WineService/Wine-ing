@@ -121,7 +121,7 @@
     <a href={{url_for("application.winelist")}} class="stars" role="button">기본</a>
   </div>
   <div class = "stars"> 
-    <a href={{url_for("application.wineliststar")}} class="stars" role="button">평점 높은 순</a>
+    <a href={{url_for("application.wineliststar")}} class="stars" role="button">리뷰 많은 순</a>
   </div>
   <div class = "reviews"> 
     <a href={{url_for("application.winelistprice")}} class="reviews" role="button">가격 순</a>
@@ -129,7 +129,7 @@
 
   <!-- 와인목록 -->
   {% for wine in wine_list %} 
-  <a href={{url_for("application.wineinfo", index=wine[1])}}>
+  <a href={{url_for("application.wineinfo", index=wine[2])}}>
     <section class ="main"> 
       <div class ="container py-5">
         <div class = "row justify-content-center mb-3">
@@ -143,19 +143,19 @@
                         <div class ="mask" style = "background-color: rgba(253, 253, 253, 0.15);">
                           <!-- 이미지 추가 -->
                           <div clas = "winepic">
-                            <img class="image image--center" src={{wine[10]}}>
+                            <img class="image image--center" src={{wine[9]}}>
                           </div>
 
                           <cdiv class = "winename">
-                            {{wine[4]}}
+                            {{wine[3]}}
                           </cdiv>
 
                           <div class = "year">
-                            {{wine[5]}}
+                            {{wine[4]}}
                           </div>
 
                           <div class ="winetype">
-                            {{wine[6]}}
+                            {{wine[5]}}
                           </div>
 
                         </div>

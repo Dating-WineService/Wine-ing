@@ -63,12 +63,16 @@ sur4 = 0
 
 @survey.route('/winetest1', methods=['GET', 'POST'])
 def winetest1():
-    global sur1
-    if request.method == 'POST':
-        sur1 = request.form['shop']
-        return redirect('/winetest2')
+    if g.user_name:
+        global sur1
+        if request.method == 'POST':
+            sur1 = request.form['shop']
+            return redirect('/winetest2')
+        else:
+            return render_template('winetest1.html')
     else:
-        return render_template('winetest1.html')
+        return render_template('login.html')
+    
 
 @survey.route('/winetest2', methods=['GET', 'POST'])
 def winetest2():
