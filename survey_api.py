@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, abort, redirect, request, Blueprint
+from flask import Flask, render_template, session, abort, redirect, request, Blueprint, g
 import pandas as pd
 from recommend_wine_modules import start
 from db_connect import db
@@ -155,7 +155,7 @@ def winetestresult():
         print(sur_wine_dic[i]['imgurl'])
     
     
-    return render_template('winetestresult.html', sur_wine_dic=sur_wine_dic, sur_wine_idx=sur_wine_idx)
+    return render_template('winetestresult.html', sur_wine_dic=sur_wine_dic, sur_wine_idx=sur_wine_idx, user_name=g.user_name)
 
 
 def survey_recommend(input_survey):

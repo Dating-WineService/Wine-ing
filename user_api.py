@@ -39,6 +39,7 @@ def load_logged_in_user():
         g.user_name = None
         print(g.user_name)
     else:
+        print(user_id)
         g.user_obj = db.session.query(User).filter(User.id == user_id).first()
         g.user_name = g.user_obj.name
         print(g.user_name)

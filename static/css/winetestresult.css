@@ -50,6 +50,7 @@ body {
 
   .product-title{
     margin: auto;
+    text-align: center;
     font-weight: bold;
     color:#fff;
   }
