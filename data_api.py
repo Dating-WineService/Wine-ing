@@ -24,14 +24,11 @@ import database
 
 @application.route('/winelist')
 def winelist():
-    wine_list=database.load_list()
-    return render_template("winelist.html",wine_list=wine_list)
-
-    # if g.user_name:
-    #     wine_list=database.load_list()
-    #     return render_template("winelist.html",wine_list=wine_list, user_name=g.user_name)
-    # else:
-    #     return render_template('login.html')
+    if g.user_name:
+        wine_list=database.load_list()
+        return render_template("winelist.html",wine_list=wine_list, user_name=g.user_name)
+    else:
+        return render_template('login.html')
     
 
 @application.route('/wineliststar')
