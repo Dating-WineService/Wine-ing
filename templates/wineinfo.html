@@ -155,7 +155,9 @@
         <div class="action">
           <form action="/mywineclick" method="POST" >
             <p><input type="hidden" value = {{wine_id}} id="mywine" name = "mywine"> </p>
-            <input type="submit" value="찜하기"/>
+            <!-- <input type="submit" value="찜하기"/> -->
+            <!-- 찜하기 버튼 디자인 수정-->
+            <input type ="image" src="/static/static_yujin/images/찜하기버튼.png">
           </form>
           <!-- <button class="add-to-cart btn btn-default" type="button"><span class="fa fa-heart"></span><span> </span>와인찜하기</button>  -->
         </div>
@@ -164,12 +166,12 @@
 
           <div class="wrapper row">
             <div class="preview col-md-4" >
-              <h1 class="product-title" style=" margin-bottom: 15%; padding-left:30%; margin-top: 10%; ">이 와인과<br>비슷한 와인 추천받기</h1>
+              <h1 class="product-title" style=" margin-bottom: 15%; padding-left:30%; margin-top: 10%; ">이 와인과<br>비슷한 와인 <br>추천 받기</h1>
          
             </div>
 
             <div class="preview col-md-8" >
-              <h1 class="subdetail" style=" margin-bottom: 13%;  margin-left: 10%; margin-top: 9%;">당도 / 바디감을 기준으로 현재 와인과 가장 유사한 와인을 추천해드립니다.
+              <h1 class="subdetail desc--font" style=" margin-bottom: 13%;  margin-left: 10%; margin-top: 9%;">당도/바디/탄닌/산도 등을 기준으로 현재 와인과 가장 유사한 와인을 추천해드립니다.
                 <br>저희 팀에서 직접 진행한 데이터 분석 서비스를 이용해보세요!</h1>
             </div>
           </div>

@@ -119,3 +119,14 @@ body {
     -webkit-transform: scale(1);
             transform: scale(1); } 
   }
+
+  .desc--font {
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 52px */
+    letter-spacing: 0.02em;
+    color: white;
+  }
