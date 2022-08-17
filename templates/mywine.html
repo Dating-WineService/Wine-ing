@@ -76,11 +76,7 @@
                 와인 추천받기 
               </a>
             </li>
-            <li class="nav-item">
-              <a href="/wineinfo" class="nav-link" style="margin-right: 20px;">
-                와인정보
-              </a>
-            </li>
+            
             <li class="nav-item">
               <a href="/contactus" class="nav-link" style="margin-right: 20px;">
                 Contact Us 
@@ -153,7 +149,7 @@
 
                         <div class ="link1 small--font">
                           <!-- 수정 -->
-                          <a href={{url_for("application.wineinfo",index=member.wine_id)}} class="link"> 상세 페이지</a> 
+                          <a href={{url_for("application.wineinfo",index=member.mywine)}} class="link"> 상세 페이지</a> 
                         </div>
 
                       </div>

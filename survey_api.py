@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, abort, redirect, request, Blueprint
+from flask import Flask, render_template, session, abort, redirect, request, Blueprint, g
 import pandas as pd
 from recommend_wine_modules import start
 from db_connect import db
@@ -63,12 +63,16 @@ sur4 = 0
 
 @survey.route('/winetest1', methods=['GET', 'POST'])
 def winetest1():
-    global sur1
-    if request.method == 'POST':
-        sur1 = request.form['shop']
-        return redirect('/winetest2')
+    if g.user_name:
+        global sur1
+        if request.method == 'POST':
+            sur1 = request.form['shop']
+            return redirect('/winetest2')
+        else:
+            return render_template('winetest1.html')
     else:
-        return render_template('winetest1.html')
+        return render_template('login.html')
+    
 
 @survey.route('/winetest2', methods=['GET', 'POST'])
 def winetest2():
@@ -155,7 +159,7 @@ def winetestresult():
         print(sur_wine_dic[i]['imgurl'])
     
     
-    return render_template('winetestresult.html', sur_wine_dic=sur_wine_dic, sur_wine_idx=sur_wine_idx)
+    return render_template('winetestresult.html', sur_wine_dic=sur_wine_dic, sur_wine_idx=sur_wine_idx, user_name=g.user_name)
 
 
 def survey_recommend(input_survey):
