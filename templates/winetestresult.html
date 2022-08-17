@@ -69,11 +69,7 @@
                 와인 추천받기 
               </a>
             </li>
-            <li class="nav-item">
-              <a href="/wineinfo" class="nav-link" style="margin-right: 20px;">
-                와인정보
-              </a>
-            </li>
+            
             <li class="nav-item">
               <a href="/contactus" class="nav-link" style="margin-right: 20px;">
                 Contact Us 
@@ -151,13 +147,13 @@
             </tr>
             <tr align="center">
               <td><h4 class="type" style="margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
-              <td><h4 class="type" style="margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
-              <td><h4 class="type" style="margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[0]]['wine_type']}}</h4></td>
+              <td><h4 class="type" style="margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[1]]['wine_type']}}</h4></td>
+              <td><h4 class="type" style="margin-bottom: 10px;">{{sur_wine_dic[sur_wine_idx[2]]['wine_type']}}</h4></td>
             </tr>
             <tr align="center">
-              <td><a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a></td>
-              <td><a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a></td>
-              <td><a class="wineinfolink" href="#wineinfo.html">🔗 와인 상세페이지</a></td>
+              <td><a class="wineinfolink" href="{{url_for("application.wineinfo",index=sur_wine_idx[0])}}">🔗 와인 상세페이지</a></td>
+              <td><a class="wineinfolink" href="{{url_for("application.wineinfo",index=sur_wine_idx[1])}}">🔗 와인 상세페이지</a></td>
+              <td><a class="wineinfolink" href="{{url_for("application.wineinfo",index=sur_wine_idx[2])}}">🔗 와인 상세페이지</a></td>
             </tr>
           </table>
 

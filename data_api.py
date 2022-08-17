@@ -27,16 +27,31 @@ def winelist():
     wine_list=database.load_list()
     return render_template("winelist.html",wine_list=wine_list)
 
+    # if g.user_name:
+    #     wine_list=database.load_list()
+    #     return render_template("winelist.html",wine_list=wine_list, user_name=g.user_name)
+    # else:
+    #     return render_template('login.html')
+    
+
 @application.route('/wineliststar')
 def wineliststar():
-    wine_list=database.load_list_star()
-    return render_template("wineliststar.html",wine_list=wine_list)
+    if g.user_name:
+        wine_list=database.load_list_star()
+        return render_template("wineliststar.html",wine_list=wine_list, user_name=g.user_name)
+    else:
+        return render_template('login.html')
+    
 
 
 @application.route('/winelistprice')
 def winelistprice():
-    wine_list=database.load_list_price()
-    return render_template("winelistprice.html",wine_list=wine_list)
+    if g.user_name:
+        wine_list=database.load_list_price()
+        return render_template("winelistprice.html",wine_list=wine_list, user_name=g.user_name)
+    else:
+        return render_template('login.html')
+    
 
 @application.route('/wineinfo/<int:index>/')
 def wineinfo(index):
@@ -78,6 +93,7 @@ def wineinfo(index):
     ,rating_num=rating_num,kprice=kprice,winery=winery,grapes=grapes,region=region,alcohol=alcohol,pairings=pairings,imgurl=imgurl,rec_id=rec_id
     ,winerecolist=winerecolist
     )
+    #, user_name=g.user_name
 
 
 # 찜하기를 눌렀을때
@@ -93,26 +109,33 @@ def mywineclick():
         return redirect(url_for("application.mywine"))
         # return redirect(url_for("wineinfo(index)"))
     else:
-        return render_template("mywine.html")
+        return render_template("mywine.html", user_name=g.user_name)
 
 # 나의와인
 @application.route('/mywine')
 def mywine():
-    result=[]
+    if g.user_name:
+        result=[]
 
-    data = db.session.query(UserWine).filter(UserWine.id.like(g.user_name)).all()
+        # data = db.session.query(UserWine).filter(UserWine.id.like(g.user_name)).all()
+        data = list(set(db.session.query(UserWine.id, UserWine.mywine).filter(UserWine.id.like(g.user_name)).all()))
+        print(data)
 
-    for d in data:
-        tmp={'id':d.id ,'mywine':d.mywine}
-        mywine=int(d.mywine)
-        wine_info=database.load_info(mywine)
-        tmp['wine_name']=wine_info["name"]
-        tmp['imgurl']=wine_info["imgurl"]
-        tmp['wine_vintage']=wine_info["vintage"]
-        tmp['wine_type']=wine_info["wine_type"]
-        result.append(tmp)
+        for d in data:
+            tmp={'id':d.id ,'mywine':d.mywine}
+            mywine=int(d.mywine)
+            wine_info=database.load_info(mywine)
+            tmp['wine_name']=wine_info["name"]
+            tmp['imgurl']=wine_info["imgurl"]
+            tmp['wine_vintage']=wine_info["vintage"]
+            tmp['wine_type']=wine_info["wine_type"]
+            result.append(tmp)
+        return render_template("mywine.html",userwine_list=result, user_name=g.user_name)
+    else:
+        return render_template('login.html')
+    
 
-    return render_template("mywine.html",userwine_list=result)
+    
 
 
 # @app.route('/search',methods=['GET','POST'])
