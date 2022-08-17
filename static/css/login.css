@@ -55,7 +55,8 @@ body {
   border-radius: 0.35rem;
   margin-left: 10%;
   width: 100%;
-
+  align-content: center;
+ 
  
 }
 
@@ -157,3 +158,6 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.loginimg{
+  margin-left: 10%;
+}
